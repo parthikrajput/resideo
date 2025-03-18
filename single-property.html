@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>resideo</title>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome 6 CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- Owl Carousel CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+
+  <!-- Font Awesome 5 CDN (if not already included) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <!-- google map -->
+  <script
+    src="https://maps.googleapis.com/maps/api/js?id=G-ZKBVC1X78F&l=dataLayer&cx=c&gtm=45He53d3v9117991082za200&tag_exp=102015666~102482433~102587591~102717422~102788824~102813109~102814060~102825837~102879719"></script>
+
+  <link rel="stylesheet" href="./Fonts/font.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body class="dark-mode">
+  <header id="myHeader" class="pxp-header properties-header dark-mode">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="logo col-5 col-md-2">
+          <a target="_self" href="./index.html" alt="" class="pxp-logo text-decoration-none">
+            resideo.
+          </a>
+        </div>
+        <div class="col-2 col-md-8 text-center">
+          <ul class="pxp-nav list-inline">
+            <li class="list-inline-item">
+              <a target="_self" href="./index.html" target="_self">Home</a>
+            </li>
+            <li class="list-inline-item">
+              <a target="_self" href="javascript:viod(0);">Properties</a>
+              <ul class="pxp-nav-sub rounded-3">
+                <li><a target="_self" href="./properties.html">All Properties</a></li>
+                <li><a target="_self" href="./single-property.html">Single Property</a></li>
+                <li><a target="_self" href="./submit-property.html">Submit New Property</a></li>
+              </ul>
+            </li>
+            <li class="list-inline-item">
+              <a target="_self" href="javascript:viod(0);">Blog</a>
+              <ul class="pxp-nav-sub rounded-3" style="display: none;">
+                <li><a target="_self" href="./blog.html">All Blog Posts</a></li>
+                <li><a target="_self" href="./single-post.html">Single Blog Post</a></li>
+              </ul>
+            </li>
+            <li class="list-inline-item">
+              <a target="_self" href="javascript:void(0);">Themes</a>
+              <ul class="pxp-nav-sub rounded-3">
+                <li><a target="_self" href="javascript:void(0);" id="lightTheme">Light</a></li>
+                <li><a target="_self" href="javascript:void(0);" id="darkTheme">Dark</a></li>
+              </ul>
+            </li>
+            <li class="list-inline-item pxp-is-last"><a target="_self" href="./contact.html">Contact Us</a></li>
+            <li class="list-inline-item pxp-has-btns">
+              <div class="pxp-user-btns">
+                <a target="_self" href="javascript:void(0);" class="pxp-user-btns-signup pxp-signup-trigger">Sign Up</a>
+                <a target="_self" href="javascript:void(0);" class="pxp-user-btns-login pxp-signin-trigger">Sign In</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="col-5 col-md-2 text-end">
+          <a target="_self" href="javascript:void(0);" class="pxp-header-nav-trigger"><i
+              class="fa-solid fa-bars"></i></a>
+          <a target="_self" href="javascript:void(0);" class="pxp-header-user pxp-signin-trigger"><i
+              class="fa-regular fa-user"></i></a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="pxp-single-property-top pxp-content-wrapper mt-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-5 mb-3 mb-md-0">
+            <h2 class="pxp-sp-top-title">Beautiful House in Marina</h2>
+            <p class="pxp-sp-top-address text-muted">542 29th Avenue, Marina District, San Francisco, CA 94121</p>
+          </div>
+          <div class="col-md-7">
+            <div class="d-flex flex-wrap align-items-center justify-content-md-end gap-3">
+              <a href="javascript:viod(0);" class="pxp-sp-top-btn d-flex align-items-center">
+                <i class="fas fa-star me-2"></i> Save
+              </a>
+              <div class="dropdown">
+                <a class="pxp-sp-top-btn d-flex align-items-center" href="#" role="button" id="dropdownMenuLink"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="fas fa-share-alt me-2"></i> Share
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuLink">
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <i class="fab fa-facebook me-2"></i> Facebook
+                    </a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">
+                      <i class="fab fa-twitter me-2"></i> Twitter
+                    </a>
+                  </li>
+                  <li><a class="dropdown-item" href="#"><i class="fab fa-pinterest me-2"></i> Pinterest</a></li>
+                  <li><a class="dropdown-item" href="#"><i class="fab fa-linkedin me-2"></i> LinkedIn</a></li>
+                </ul>
+              </div>
+              <div class="pxp-sp-top-feat d-flex gap-3 text-center">
+                <div>5 <span>BD</span></div>
+                <div>4 <span>BA</span></div>
+                <div>3,945 <span>SF</span></div>
+              </div>
+              <div class="pxp-sp-top-price fw-bold fs-5">$5,198,000</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pxp-single-property-gallery-container mt-4 mt-md-5">
+      <div class="pxp-single-property-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"
+          class="pxp-sp-gallery-main-img">
+          <a href="./Img/prop-7-1-big.jpg" itemprop="contentUrl" data-fancybox="gallery">
+            <img src="./Img/prop-7-1-big.jpg" alt="Property Image 1">
+          </a>
+        </figure>
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+          <a href="./Img/prop-7-2-big.jpg" itemprop="contentUrl" data-fancybox="gallery">
+            <img src="./Img/prop-7-2-big.jpg" alt="Property Image 2">
+          </a>
+        </figure>
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+          <a href="./Img/prop-7-3-big.jpg" itemprop="contentUrl" data-fancybox="gallery">
+            <img src="./Img/prop-7-3-big.jpg" alt="Property Image 3">
+          </a>
+        </figure>
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+          <a href="./Img/prop-1-3-big.jpg" itemprop="contentUrl" data-fancybox="gallery">
+            <img src="./Img/prop-1-3-big.jpg" alt="Property Image 4">
+          </a>
+        </figure>
+        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+          <a href="./Img/prop-2-3-big.jpg" itemprop="contentUrl" data-fancybox="gallery">
+            <img src="./Img/prop-2-3-big.jpg" alt="Property Image 5">
+          </a>
+        </figure>
+      </div>
+
+      <!-- Clicking "View Photos" Opens Fancybox Gallery -->
+      <a href="./Img/prop-7-1-big.jpg" class="pxp-sp-gallery-btn mt-3" data-fancybox="gallery">View Photos</a>
+    </section>
+
+    <section class="mt-100 single-property">
+      <div class="container mt-100">
+        <div class="row ">
+          <div class="col-lg-8 mt-100">
+            <div class="pxp-single-property-section">
+              <h3>Key Details</h3>
+              <div class="row mt-3 mt-md-4 g-3">
+                <div class="col-12 col-md-6">
+                  <div class="pxp-sp-key-details-item">
+                    <div class="pxp-sp-kd-item-label text-uppercase fw-bold">Status</div>
+                    <div class="pxp-sp-kd-item-value">Coming Soon</div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="pxp-sp-key-details-item">
+                    <div class="pxp-sp-kd-item-label text-uppercase fw-bold">Property Type</div>
+                    <div class="pxp-sp-kd-item-value">Apartment</div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="pxp-sp-key-details-item">
+                    <div class="pxp-sp-kd-item-label text-uppercase fw-bold">Year Built</div>
+                    <div class="pxp-sp-kd-item-value">1980</div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="pxp-sp-key-details-item">
+                    <div class="pxp-sp-kd-item-label text-uppercase fw-bold">Stories</div>
+                    <div class="pxp-sp-kd-item-value">23</div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="pxp-sp-key-details-item">
+                    <div class="pxp-sp-kd-item-label text-uppercase fw-bold">Room Count</div>
+                    <div class="pxp-sp-kd-item-value">6</div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="pxp-sp-key-details-item">
+                    <div class="pxp-sp-kd-item-label text-uppercase fw-bold">Parking Spaces</div>
+                    <div class="pxp-sp-kd-item-value">2</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="pxp-single-property-section mt-4 mt-md-5">
+              <h3>Overview</h3>
+              <div class="mt-3 mt-md-4">
+                <p class="fw-normal">
+                  Fully furnished. Elegantly appointed condominium unit situated on premier location. PS6. The wide
+                  entry hall leads to a large living room with dining area. This expansive 2-bedroom and 2 renovated
+                  marble bathroom apartment has great windows. Despite the interior views, the apartment’s Southern and
+                  Eastern exposures allow for lovely natural light to fill every room. The master suite is surrounded by
+                  handcrafted millwork and features incredible walk-in closet and storage space. The second bedroom is
+                  <span class="pxp-dots">...</span>
+                  <span class="pxp-dots-more d-none">
+                    a corner room with double windows. The kitchen has fabulous space, new appliances, and a laundry
+                    area. Other features include rich herringbone floors, crown moldings, and coffered ceilings
+                    throughout the apartment. 1049 5th Avenue is a classic pre-war building located across from Central
+                    Park, the reservoir, and The Metropolitan Museum. Elegant lobby and 24-hour doorman. This is a
+                    pet-friendly building.
+                    <br><br>
+                    Conveniently located close to several trendy fitness centers like Equinox, New York Sports Clubs &
+                    Crunch. Fine restaurants around the area, as well as top-ranked schools. 2% Flip tax paid by buyer
+                    to the condominium. The building just put an assessment for 18 months of approximately $500 per
+                    month.
+                  </span>
+                </p>
+                <a href="javascript:void(0);" class="pxp-sp-more text-uppercase fw-bold" onclick="toggleReadMore()">
+                  <span class="pxp-sp-more-1">Continue Reading <i class="fa fa-angle-down"></i></span>
+                  <span class="pxp-sp-more-2 d-none">Show Less <i class="fa fa-angle-up"></i></span>
+                </a>
+              </div>
+            </div>
+
+            <div class="pxp-single-property-section mt-4 mt-md-5">
+              <h3>Amenities</h3>
+              <div class="row mt-3 mt-md-4 gx-3 gy-3">
+                <div class="col-sm-6 col-lg-4">
+                  <div class="pxp-sp-amenities-item"><i class="fas fa-wifi"></i> Internet</div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                  <div class="pxp-sp-amenities-item"><i class="fas fa-car"></i> Garage</div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                  <div class="pxp-sp-amenities-item"><i class="fas fa-sun"></i> Air Conditioning</div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                  <div class="pxp-sp-amenities-item"><i class="fas fa-utensils"></i> Dishwasher</div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                  <div class="pxp-sp-amenities-item"><i class="fas fa-recycle"></i> Disposal</div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                  <div class="pxp-sp-amenities-item"><i class="fas fa-clone"></i> Balcony</div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                  <div class="pxp-sp-amenities-item"><i class="fas fa-dumbbell"></i> Gym</div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                  <div class="pxp-sp-amenities-item"><i class="fas fa-child"></i> Playroom</div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                  <div class="pxp-sp-amenities-item"><i class="fas fa-glass-martini"></i> Bar</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="pxp-single-property-section mt-4 mt-md-5">
+              <h3>Explore the Area</h3>
+              <div class="pxp-sp-pois-nav mt-3 mt-md-4">
+                <div class="pxp-sp-pois-nav-item transportation active">Transportation</div>
+                <div class="pxp-sp-pois-nav-item restaurants active">Restaurants</div>
+                <div class="pxp-sp-pois-nav-item shopping active">Shopping</div>
+                <div class="pxp-sp-pois-nav-item cafes active">Cafes &amp; Bars</div>
+                <div class="pxp-sp-pois-nav-item arts active">Arts &amp; Entertainment</div>
+                <div class="pxp-sp-pois-nav-item fitness active">Fitness</div>
+              </div>
+              <div id="pxp-sp-map" class="pxp-map-container mt-3">
+
+              </div>
+            </div>
+
+            <div class="pxp-single-property-section mt-4 mt-md-5">
+              <h3>Payment Calculator</h3>
+              <div class="pxp-calculator-view mt-3 mt-md-4">
+                <div class="row">
+                  <div class="col-lg-4 align-self-center">
+                    <div class="pxp-calculator-chart-container">
+                      <canvas id="pxp-calculator-chart" width="217" height="217"></canvas>
+                      <div class="pxp-calculator-chart-result">
+                        <div class="pxp-calculator-chart-result-sum">$26,669</div>
+                        <div class="pxp-calculator-chart-result-label">per month</div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="col-lg-8 align-self-center mt-3 mt-lg-0">
+                    <div class="pxp-calculator-data">
+                      <div class="row justify-content-between">
+                        <div class="col-8">
+                          <div class="pxp-calculator-data-label"><i class="fas fa-minus"></i> Principal & Interest</div>
+                        </div>
+                        <div class="col-4 text-end">
+                          <div class="pxp-calculator-data-sum" id="pxp-calculator-data-pi">$23,565</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="pxp-calculator-data">
+                      <div class="row justify-content-between">
+                        <div class="col-8">
+                          <div class="pxp-calculator-data-label"><i class="fas fa-minus"></i> Property Taxes</div>
+                        </div>
+                        <div class="col-4 text-end">
+                          <div class="pxp-calculator-data-sum" id="pxp-calculator-data-pt">$1,068</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="pxp-calculator-data">
+                      <div class="row justify-content-between">
+                        <div class="col-8">
+                          <div class="pxp-calculator-data-label"><i class="fas fa-minus"></i> HOA Dues</div>
+                        </div>
+                        <div class="col-4 text-end">
+                          <div class="pxp-calculator-data-sum" id="pxp-calculator-data-hd">$2,036</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="pxp-calculator-form mt-3 mt-md-4">
+                <input type="hidden" id="pxp-calculator-form-property-taxes" value="1068">
+                <input type="hidden" id="pxp-calculator-form-hoa-dues" value="2036">
+
+                <div class="row">
+                  <div class="col-md-6 form-group">
+                    <label for="pxp-calculator-form-term">Term</label>
+                    <select class="form-select" id="pxp-calculator-form-term">
+                      <option value="30">30 Years Fixed</option>
+                      <option value="20">20 Years Fixed</option>
+                      <option value="15">15 Years Fixed</option>
+                      <option value="10">10 Years Fixed</option>
+                    </select>
+                  </div>
+                  <div class="col-md-6 form-group">
+                    <label for="pxp-calculator-form-interest">Interest</label>
+                    <input type="text" class="form-control pxp-input-percent" id="pxp-calculator-form-interest"
+                      value="4.45%">
+                  </div>
+                  <div class="col-md-6 form-group">
+                    <label for="pxp-calculator-form-price">Home Price</label>
+                    <input type="text" class="form-control pxp-input-currency" id="pxp-calculator-form-price"
+                      value="$5,198,000">
+                  </div>
+                  <div class="col-md-6 form-group">
+                    <div class="row">
+                      <div class="col-md-8">
+                        <div class="mb-3">
+                          <label for="pxp-calculator-form-down-price" class="form-label">Down Payment</label>
+                          <input type="text" class="form-control pxp-form-control-transform"
+                            id="pxp-calculator-form-down-price" data-type="currency" value="$519,800">
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="mb-3">
+                          <label for="pxp-calculator-form-down-percentage" class="form-label">&nbsp;</label>
+                          <input type="text" class="form-control pxp-form-control-transform"
+                            id="pxp-calculator-form-down-percentage" data-type="percent" value="10%">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="pxp-single-property-section mt-4 mt-md-5">
+              <h3>Schools in Marina District</h3>
+              <ul class="nav nav-tabs pxp-nav-tabs mt-3 mt-md-4" id="schoolTabs">
+                <li class="nav-item">
+                  <a class="nav-link" id="elementary-tab" data-bs-toggle="tab" href="#elementary"
+                    role="tab">Elementary</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="middle-tab" data-bs-toggle="tab" href="#middle" role="tab">Middle</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" id="high-tab" data-bs-toggle="tab" href="#high" role="tab">High</a>
+                </li>
+              </ul>
+
+              <div class="tab-content mt-3">
+                <div class="tab-pane fade" id="elementary" role="tabpanel">
+                  <table class="table table-responsive pxp-table">
+                    <thead>
+                      <tr>
+                        <th>School</th>
+                        <th>Type</th>
+                        <th>Grades</th>
+                        <th>Rating</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Greenwood Elementary</td>
+                        <td>Public</td>
+                        <td>K-5</td>
+                        <td>4/5<span class="pxp-school-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="far fa-star"></i></span>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <div class="tab-pane fade" id="middle" role="tabpanel">
+                  <table class="table table-responsive pxp-table">
+                    <thead>
+                      <tr>
+                        <th>School</th>
+                        <th>Type</th>
+                        <th>Grades</th>
+                        <th>Rating</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Marina Middle School</td>
+                        <td>Public</td>
+                        <td>6-8</td>
+                        <td>4.5/5<span class="pxp-school-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i></span>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <div class="tab-pane fade show active" id="high" role="tabpanel">
+                  <table class="table table-responsive pxp-table">
+                    <thead>
+                      <tr>
+                        <th>School</th>
+                        <th>Type</th>
+                        <th>Grades</th>
+                        <th>Rating</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Harvest Collegiate High School</td>
+                        <td>Public</td>
+                        <td>9-12</td>
+                        <td>5/5<span class="pxp-school-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i></span>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mt-100">
+            <div class="pxp-single-property-section pxp-sp-agent-section mt-4 mt-md-5 mt-lg-0">
+              <h3>Listed By</h3>
+              <div class="pxp-sp-agent mt-3 mt-md-4">
+                <a href="./single-agent.html" class="pxp-sp-agent-fig pxp-cover rounded-lg"
+                  style="background-image: url(./Img/agent-4.jpg); background-position: top center;">
+                </a>
+                <div class="pxp-sp-agent-info">
+                  <div class="pxp-sp-agent-info-name">
+                    <a href="./single-agent.html">Erika Tillman</a>
+                  </div>
+                  <div class="pxp-sp-agent-info-rating">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <div class="pxp-sp-agent-info-email">
+                    <a href="mailto:erika.tillman@resideo.com">erika.tillman@resideo.com</a>
+                  </div>
+                  <div class="pxp-sp-agent-info-phone">
+                    <i class="fas fa-phone"></i> (123) 456-7890
+                  </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="pxp-sp-agent-btns mt-3 mt-md-4">
+                  <a href="#pxp-contact-agent" class="pxp-sp-agent-btn-main" data-bs-toggle="modal"
+                    data-bs-target="#pxp-contact-agent">
+                    <i class="far fa-envelope"></i> Contact Agent
+                  </a>
+                  <a href="#pxp-contact-agent" class="pxp-sp-agent-btn" data-bs-toggle="modal"
+                    data-bs-target="#pxp-contact-agent">
+                    <i class="far fa-calendar-check"></i> Request Tour
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+
+  <footer class="mt-100 pt-100 pb-100 dark-mode">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <div class="pxp-footer-logo fw-bold fs-4">resideo.</div>
+          <div class="pxp-footer-address mt-2 ">
+            90 Fifth Avenue, 3rd Floor<br>
+            San Francisco, CA 1980<br>
+            (123) 456-7890
+          </div>
+          <div class="pxp-footer-social mt-3">
+            <a href="#" class="text-dark me-3"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-dark me-3"><i class="fab fa-facebook-square"></i></a>
+            <a href="#" class="text-dark"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-8">
+          <div class="row">
+            <div class="col-md-4 mb-4 mb-md-0">
+              <h5 class="pxp-footer-header fw-semibold">Company</h5>
+              <ul class="list-unstyled pxp-footer-links mt-2">
+                <li><a href="#" class="text-decoration-none ">About Us</a></li>
+                <li><a href="#" class="text-decoration-none ">Agents</a></li>
+                <li><a href="#" class="text-decoration-none ">Blog</a></li>
+                <li><a href="#" class="text-decoration-none ">Demos</a></li>
+                <li><a href="#" class="text-decoration-none ">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4 mb-4 mb-md-0">
+              <h5 class="pxp-footer-header fw-semibold">Actions</h5>
+              <ul class="list-unstyled pxp-footer-links mt-2">
+                <li><a href="#" class="text-decoration-none ">Buy Properties</a></li>
+                <li><a href="#" class="text-decoration-none ">Rent Properties</a></li>
+                <li><a href="#" class="text-decoration-none ">Sell Properties</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <h5 class="pxp-footer-header fw-semibold">Explore</h5>
+              <ul class="list-unstyled pxp-footer-links mt-2">
+                <li><a href="#" class="text-decoration-none ">Homes for Rent</a></li>
+                <li><a href="#" class="text-decoration-none ">Apartments for Rent</a></li>
+                <li><a href="#" class="text-decoration-none ">Homes for Sale</a></li>
+                <li><a href="#" class="text-decoration-none ">Apartments for Sale</a></li>
+                <li><a href="#" class="text-decoration-none ">CRM</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pxp-footer-bottom mt-4 d-flex flex-column ">
+        <div>
+          <a href="#" class="text-decoration-none ">Terms &amp; Conditions</a> &amp;
+          <a href="#" class="text-decoration-none ">Privacy Policy</a>
+        </div>
+        <div class="pxp-footer-copyright">© Resideo. All Rights Reserved. 2025</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Owl Carousel JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+
+  <!-- jQuery Minified (Latest Version) -->
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <!-- Include Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <script src="./script.js"></script>
+
+  <script>
+    // fanci box
+    function toggleReadMore() {
+      let dots = document.querySelector(".pxp-dots");
+      let moreText = document.querySelector(".pxp-dots-more");
+      let moreBtn1 = document.querySelector(".pxp-sp-more-1");
+      let moreBtn2 = document.querySelector(".pxp-sp-more-2");
+
+      if (dots.classList.contains("d-none")) {
+        dots.classList.remove("d-none");
+        moreText.classList.add("d-none");
+        moreBtn1.classList.remove("d-none");
+        moreBtn2.classList.add("d-none");
+      } else {
+        dots.classList.add("d-none");
+        moreText.classList.remove("d-none");
+        moreBtn1.classList.add("d-none");
+        moreBtn2.classList.remove("d-none");
+      }
+    }
+    // tab
+
+    document.addEventListener("DOMContentLoaded", function () {
+      // Select all tab links
+      var tabLinks = document.querySelectorAll(".nav-link");
+
+      // Listen for clicks on each tab link
+      tabLinks.forEach(function (tab) {
+        tab.addEventListener("click", function (event) {
+          event.preventDefault();
+          var targetTab = new bootstrap.Tab(tab);
+          targetTab.show();
+        });
+      });
+    });
+
+
+    // map
+    (function ($) {
+      "use strict";
+
+      var map, styles, info;
+      var markers = {
+        transportation: [],
+        restaurants: [],
+        shopping: [],
+        cafes: [],
+        arts: [],
+        fitness: []
+      };
+
+      var propLat = 37.75347110977809;
+      var propLng = -122.46686778459474;
+      var center = new google.maps.LatLng(propLat, propLng);
+
+      var options = {
+        zoom: 14,
+        center: center,
+        mapTypeId: 'Styled',
+        panControl: false,
+        zoomControl: true,
+        mapTypeControl: true,
+        streetViewControl: true,
+        fullscreenControl: true,
+        scrollwheel: false,
+        zoomControlOptions: { position: google.maps.ControlPosition.RIGHT_BOTTOM }
+      };
+
+      styles = [{ featureType: "water", elementType: "geometry", stylers: [{ color: "#e9e9e9" }, { lightness: 17 }] }]; // Add other styles as needed
+
+      var markerImages = {
+        transportation: 'images/transportation-marker.png',
+        restaurants: 'images/restaurants-marker.png',
+        shopping: 'images/shopping-marker.png',
+        cafes: 'images/cafes-marker.png',
+        arts: 'images/arts-marker.png',
+        fitness: 'images/fitness-marker.png'
+      };
+
+      function getPOIs(type) {
+        var service = new google.maps.places.PlacesService(map);
+        var typesMap = {
+          transportation: ['bus_station', 'subway_station', 'train_station', 'transit_station', 'airport'],
+          restaurants: ['restaurant'],
+          shopping: ['shopping_mall', 'store', 'supermarket'],
+          cafes: ['cafe', 'bar'],
+          arts: ['museum', 'art_gallery'],
+          fitness: ['gym']
+        };
+
+        typesMap[type].forEach(function (poiType) {
+          service.nearbySearch({ location: center, radius: 2000, type: poiType }, function (results, status) {
+            if (status === google.maps.places.PlacesServiceStatus.OK) {
+              results.forEach(function (place) {
+                createPOI(place, type);
+              });
+            }
+          });
+        });
+      }
+
+      function createPOI(place, type) {
+        var marker = new google.maps.Marker({
+          map: map,
+          position: place.geometry.location,
+          icon: { url: markerImages[type], scaledSize: new google.maps.Size(47, 47) }
+        });
+
+        markers[type].push(marker);
+
+        google.maps.event.addListener(marker, 'mouseover', function () {
+          info.setContent(place.name);
+          info.open(map, this);
+        });
+        google.maps.event.addListener(marker, 'mouseout', function () {
+          info.close();
+        });
+      }
+
+      function togglePOIs(type) {
+        markers[type].forEach(marker => {
+          marker.setMap(marker.getMap() ? null : map);
+        });
+      }
+
+      function initializeMap() {
+        map = new google.maps.Map(document.getElementById('pxp-sp-map'), options);
+        map.mapTypes.set('Styled', new google.maps.StyledMapType(styles, { name: 'Styled' }));
+        info = new google.maps.InfoWindow();
+
+        $('.pxp-sp-pois-nav').click(function () {
+          var type = $(this).data('type');
+          $(this).toggleClass('pxp-active');
+          getPOIs(type);
+          togglePOIs(type);
+        });
+      }
+
+      $(document).ready(function () {
+        if ($('#pxp-sp-map').length) {
+          setTimeout(initializeMap, 300);
+        }
+      });
+    })(jQuery);
+
+    // chart
+    document.addEventListener("DOMContentLoaded", function () {
+      let canvas = document.getElementById("pxp-calculator-chart");
+
+      if (!canvas) {
+        console.error("❌ ERROR: Canvas element with ID 'pxp-calculator-chart' not found!");
+        return;
+      }
+
+      let ctx = canvas.getContext("2d");
+
+      if (!ctx) {
+        console.error("❌ ERROR: Unable to get 2D context for the chart!");
+        return;
+      }
+
+      console.log("✅ Chart.js Loaded Successfully");
+
+      let calculatorChart = new Chart(ctx, {
+        type: "doughnut",
+        data: {
+          labels: ["Principal & Interest", "Property Taxes", "HOA Dues"],
+          datasets: [{
+            data: [1000, 300, 200], // Sample Data
+            backgroundColor: ["#0070C9", "#4B9AD9", "#99C6E9"]
+          }]
+        },
+        options: {
+          responsive: true,
+          cutout: "85%",
+          plugins: {
+            legend: { display: false }
+          }
+        }
+      });
+
+      console.log("✅ Chart Created Successfully");
+    });
+
+
+  </script>
+</body>
+
+</html>

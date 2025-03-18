@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>resideo</title>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome 6 CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- google map -->
+  <script
+    src="https://maps.googleapis.com/maps/api/js?id=G-ZKBVC1X78F&l=dataLayer&cx=c&gtm=45He53d3v9117991082za200&tag_exp=102015666~102482433~102587591~102717422~102788824~102813109~102814060~102825837~102879719"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.9.3/dropzone.min.css">
+
+  <link rel="stylesheet" href="./Fonts/font.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body class="dark-mode">
+  <header id="myHeader" class="pxp-header properties-header dark-mode">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="logo col-5 col-md-2">
+          <a target="_self" href="./index.html" alt="" class="pxp-logo text-decoration-none">
+            resideo.
+          </a>
+        </div>
+        <div class="col-2 col-md-8 text-center">
+          <ul class="pxp-nav list-inline">
+            <li class="list-inline-item">
+              <a target="_self" href="./index.html" target="_self">Home</a>
+            </li>
+            <li class="list-inline-item">
+              <a target="_self" href="javascript:viod(0);">Properties</a>
+              <ul class="pxp-nav-sub rounded-3">
+                <li><a target="_self" href="./properties.html">All Properties</a></li>
+                <li><a target="_self" href="./single-property.html">Single Property</a></li>
+                <li><a target="_self" href="./submit-property.html">Submit New Property</a></li>
+              </ul>
+            </li>
+            <li class="list-inline-item">
+              <a target="_self" href="javascript:viod(0);">Blog</a>
+              <ul class="pxp-nav-sub rounded-3" style="display: none;">
+                <li><a target="_self" href="./blog.html">All Blog Posts</a></li>
+                <li><a target="_self" href="./single-post.html">Single Blog Post</a></li>
+              </ul>
+            </li>
+            <li class="list-inline-item">
+              <a target="_self" href="javascript:void(0);">Themes</a>
+              <ul class="pxp-nav-sub rounded-3">
+                <li><a target="_self" href="javascript:void(0);" id="lightTheme">Light</a></li>
+                <li><a target="_self" href="javascript:void(0);" id="darkTheme">Dark</a></li>
+              </ul>
+            </li>
+            <li class="list-inline-item pxp-is-last"><a target="_self" href="./contact.html">Contact Us</a></li>
+            <li class="list-inline-item pxp-has-btns">
+              <div class="pxp-user-btns">
+                <a target="_self" href="javascript:void(0);" class="pxp-user-btns-signup pxp-signup-trigger">Sign Up</a>
+                <a target="_self" href="javascript:void(0);" class="pxp-user-btns-login pxp-signin-trigger">Sign In</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="col-5 col-md-2 text-end">
+          <a target="_self" href="javascript:void(0);" class="pxp-header-nav-trigger"><i
+              class="fa-solid fa-bars"></i></a>
+          <a target="_self" href="javascript:void(0);" class="pxp-header-user pxp-signin-trigger"><i
+              class="fa-regular fa-user"></i></a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="dark-mode submit-property">
+      <div class="pxp-submit-property pxp-content-wrapper mt-100">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-7">
+              <h1 class="pxp-page-header">Add New Property</h1>
+            </div>
+          </div>
+
+          <div class="row mt-4 mt-md-5">
+            <div class="col-sm-12 col-lg-8">
+              <h3>Basic Information</h3>
+              <div class="mt-3 mt-md-4">
+                <div class="form-group">
+                  <label for="pxp-submit-property-title">Title</label>
+                  <input type="text" class="form-control" id="pxp-submit-property-title"
+                    placeholder="Enter property title">
+                </div>
+                <div class="form-group">
+                  <label for="pxp-submit-property-overview">Overview</label>
+                  <textarea class="form-control" id="pxp-submit-property-overview" rows="6"
+                    placeholder="Describe the property..."></textarea>
+                </div>
+              </div>
+
+              <h3 class="mt-4 mt-md-5">Key Details</h3>
+              <div class="row mt-3 mt-md-4">
+                <div class="col-sm-12 col-md-6">
+                  <div class="form-group">
+                    <label for="pxp-submit-property-type">Type</label>
+                    <select class="form-select" id="pxp-submit-property-type">
+                      <option value="">Select type</option>
+                      <option value="">Apartment</option>
+                      <option value="">House</option>
+                      <option value="">Townhome</option>
+                      <option value="">Multi-Family</option>
+                      <option value="">Land</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                  <div class="form-group">
+                    <label for="pxp-submit-property-status">Status</label>
+                    <select class="form-select" id="pxp-submit-property-status">
+                      <option value="">Select status</option>
+                      <option value="">For Rent</option>
+                      <option value="">For Sale</option>
+                      <option value="">To Let</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                  <div class="form-group">
+                    <label for="pxp-submit-property-built">Year Built</label>
+                    <input type="text" class="form-control" id="pxp-submit-property-built">
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                  <div class="form-group">
+                    <label for="pxp-submit-property-stories">Stories</label>
+                    <input type="text" class="form-control" id="pxp-submit-property-stories">
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                  <div class="form-group">
+                    <label for="pxp-submit-property-rooms">Room Count</label>
+                    <input type="text" class="form-control" id="pxp-submit-property-rooms">
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                  <div class="form-group">
+                    <label for="pxp-submit-property-parking">Parking Spaces</label>
+                    <input type="text" class="form-control" id="pxp-submit-property-parking">
+                  </div>
+                </div>
+              </div>
+
+              <h3 class="mt-4 mt-md-5">Amenities</h3>
+              <div class="row mt-3 mt-md-4">
+                <div class="col-sm-6 col-md-4">
+                  <div class="form-group">
+                    <div class="checkbox custom-checkbox">
+                      <label><input type="checkbox" value="1"><span class="fa fa-wifi"></span> Internet</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                  <div class="form-group">
+                    <div class="checkbox custom-checkbox">
+                      <label><input type="checkbox" value="1"><span class="fa fa-car"></span> Garage</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                  <div class="form-group">
+                    <div class="checkbox custom-checkbox">
+                      <label><input type="checkbox" value="1"><span class="fa fa-sun"></span> Air Conditioning</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                  <div class="form-group">
+                    <div class="checkbox custom-checkbox">
+                      <label><input type="checkbox" value="1"><span class="fa fa-bullseye"></span> Dishwasher</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                  <div class="form-group">
+                    <div class="checkbox custom-checkbox">
+                      <label><input type="checkbox" value="1"><span class="fa fa-recycle"></span> Disposal</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                  <div class="form-group">
+                    <div class="checkbox custom-checkbox">
+                      <label><input type="checkbox" value="1"><span class="fa fa-clone"></span> Balcony</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                  <div class="form-group">
+                    <div class="checkbox custom-checkbox">
+                      <label><input type="checkbox" value="1"><span class="fa fa-futbol"></span> Gym</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                  <div class="form-group">
+                    <div class="checkbox custom-checkbox">
+                      <label><input type="checkbox" value="1"><span class="fa fa-smile"></span> Playroom</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                  <div class="form-group">
+                    <div class="checkbox custom-checkbox">
+                      <label><input type="checkbox" value="1"><span class="fas fa-glass-martini"></span> Bar</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <h3 class="mt-4 mt-md-5">Photo Gallery</h3>
+              <form class="dropzone needsclick mt-3 mt-md-4 dz-clickable" id="demo-upload" action="/upload">
+                <div class="dz-message needsclick">
+                  Drop files here or click to upload.<br>
+                  <span class="note needsclick">This is just a demo dropzone. Selected files are <strong>not</strong>
+                    actually uploaded.</span>
+                </div>
+              </form>
+            </div>
+
+            <div class="col-lg-4">
+              <div class="pxp-submit-property-side rounded-3 mt-4 mt-md-5 mt-lg-0">
+                <h3>Main Details</h3>
+                <div class="row mt-3 mt-md-4">
+                  <div class="col-md-6">
+                    <div class="mb-3">
+                      <label for="pxp-submit-property-price" class="form-label">Price</label>
+                      <input type="text" class="form-control" id="pxp-submit-property-price" placeholder="Enter price">
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="mb-3">
+                      <label for="pxp-submit-property-plabel" class="form-label">Price Label</label>
+                      <input type="text" class="form-control" id="pxp-submit-property-plabel"
+                        placeholder="Enter price label">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="mb-3">
+                      <label for="pxp-submit-property-beds" class="form-label">Beds</label>
+                      <input type="text" class="form-control" id="pxp-submit-property-beds" placeholder="0">
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="mb-3">
+                      <label for="pxp-submit-property-baths" class="form-label">Baths</label>
+                      <input type="text" class="form-control" id="pxp-submit-property-baths" placeholder="0">
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="mb-3">
+                      <label for="pxp-submit-property-size" class="form-label">Size (sq ft)</label>
+                      <input type="text" class="form-control" id="pxp-submit-property-size" placeholder="0">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="pxp-submit-property-side rounded-3 mt-4 mt-md-5">
+                <h3>Location</h3>
+                <div class="mt-4">
+                  <div class="mb-3">
+                    <label for="pxp-submit-property-address" class="form-label">Address</label>
+                    <input type="text" class="form-control" id="pxp-submit-property-address"
+                      placeholder="Enter address">
+                  </div>
+                  <div id="pxp-submit-property-map" class="w-100" style="height: 300px;"></div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mt-4 mt-md-5">
+            <a href="#" class="pxp-submit-property-btn">Submit Property</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="mt-100 pt-100 pb-100 dark-mode">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <div class="pxp-footer-logo fw-bold fs-4">resideo.</div>
+          <div class="pxp-footer-address mt-2 ">
+            90 Fifth Avenue, 3rd Floor<br>
+            San Francisco, CA 1980<br>
+            (123) 456-7890
+          </div>
+          <div class="pxp-footer-social mt-3">
+            <a href="#" class="text-dark me-3"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-dark me-3"><i class="fab fa-facebook-square"></i></a>
+            <a href="#" class="text-dark"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-8">
+          <div class="row">
+            <div class="col-md-4 mb-4 mb-md-0">
+              <h5 class="pxp-footer-header fw-semibold">Company</h5>
+              <ul class="list-unstyled pxp-footer-links mt-2">
+                <li><a href="#" class="text-decoration-none ">About Us</a></li>
+                <li><a href="#" class="text-decoration-none ">Agents</a></li>
+                <li><a href="#" class="text-decoration-none ">Blog</a></li>
+                <li><a href="#" class="text-decoration-none ">Demos</a></li>
+                <li><a href="#" class="text-decoration-none ">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4 mb-4 mb-md-0">
+              <h5 class="pxp-footer-header fw-semibold">Actions</h5>
+              <ul class="list-unstyled pxp-footer-links mt-2">
+                <li><a href="#" class="text-decoration-none ">Buy Properties</a></li>
+                <li><a href="#" class="text-decoration-none ">Rent Properties</a></li>
+                <li><a href="#" class="text-decoration-none ">Sell Properties</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <h5 class="pxp-footer-header fw-semibold">Explore</h5>
+              <ul class="list-unstyled pxp-footer-links mt-2">
+                <li><a href="#" class="text-decoration-none ">Homes for Rent</a></li>
+                <li><a href="#" class="text-decoration-none ">Apartments for Rent</a></li>
+                <li><a href="#" class="text-decoration-none ">Homes for Sale</a></li>
+                <li><a href="#" class="text-decoration-none ">Apartments for Sale</a></li>
+                <li><a href="#" class="text-decoration-none ">CRM</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pxp-footer-bottom mt-4 d-flex flex-column ">
+        <div>
+          <a href="#" class="text-decoration-none ">Terms &amp; Conditions</a> &amp;
+          <a href="#" class="text-decoration-none ">Privacy Policy</a>
+        </div>
+        <div class="pxp-footer-copyright">© Resideo. All Rights Reserved. 2025</div>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Bootstrap 5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- jQuery Minified (Latest Version) -->
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.9.3/dropzone.min.js"></script>
+
+  <script src="./script.js"></script>
+
+  <script>
+    // map
+    function initMap() {
+      // Ensure the container exists
+      const mapContainer = document.getElementById("pxp-submit-property-map");
+
+      if (!mapContainer) {
+        console.error("Map container not found!");
+        return;
+      }
+
+      // Define default coordinates if undefined
+      const center = {
+        lat: typeof propLat !== "undefined" ? propLat : 40.73061,
+        lng: typeof propLng !== "undefined" ? propLng : -73.935242,
+      };
+
+      const map = new google.maps.Map(mapContainer, {
+        center: center,
+        zoom: 15,
+        mapTypeId: "roadmap",
+      });
+
+      // Add a marker at the property location
+      new google.maps.Marker({
+        position: center,
+        map: map,
+        title: "Property Location",
+      });
+
+      // Resize the map once tiles are loaded
+      google.maps.event.addListenerOnce(map, "tilesloaded", function () {
+        google.maps.event.trigger(map, "resize");
+        map.setCenter(center);
+      });
+
+      console.log("Google Map initialized successfully.");
+    }
+
+    // Ensure Google API is loaded before running initMap
+    document.addEventListener("DOMContentLoaded", function () {
+      if (typeof google !== "undefined") {
+        initMap();
+      } else {
+        console.error("Google Maps API is not loaded!");
+      }
+    });
+
+    // file 
+
+    document.addEventListener("DOMContentLoaded", function () {
+      // Ensure Dropzone does not auto-discover
+      Dropzone.autoDiscover = false;
+
+      // Initialize Dropzone
+      const dropzone = new Dropzone("#demo-upload", {
+        url: "/upload", // Replace with actual upload URL
+        maxFiles: 10, // Maximum number of files
+        maxFilesize: 5, // Max file size in MB
+        acceptedFiles: "image/*,application/pdf", // Accept images and PDFs
+        addRemoveLinks: true,
+        dictDefaultMessage: "Drop files here or click to upload",
+        init: function () {
+          this.on("success", function (file, response) {
+            console.log("File uploaded successfully:", response);
+          });
+
+          this.on("error", function (file, errorMessage) {
+            console.error("File upload error:", errorMessage);
+          });
+
+          this.on("addedfile", function (file) {
+            console.log("File added:", file.name);
+          });
+
+          this.on("removedfile", function (file) {
+            console.log("File removed:", file.name);
+          });
+        },
+      });
+
+      console.log("Dropzone initialized.");
+    });
+
+
+  </script>
+
+</body>
+
+</html>
