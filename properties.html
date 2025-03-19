@@ -14,6 +14,9 @@
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 
+  <script
+    src="https://maps.googleapis.com/maps/api/js?id=G-ZKBVC1X78F&l=dataLayer&cx=c&gtm=45He53d3v9117991082za200&tag_exp=102015666~102482433~102587591~102717422~102788824~102813109~102814060~102825837~102879719"></script>
+
 
   <link rel="stylesheet" href="./Fonts/font.css">
   <link rel="stylesheet" href="./style.css">
@@ -74,7 +77,365 @@
     </div>
   </header>
 
-  <main></main>
+  <main class="dark-mode properties-page">
+    <div class="pxp-content pxp-full-height">
+      <div class="pxp-map-side pxp-map-right pxp-half">
+        <div id="map" style="position: relative; overflow: hidden;"></div>
+        <a href="javascript:void(0);" class="pxp-list-toggle"><span class="fa fa-list"></span></a>
+      </div>
+      <div class="pxp-content-side pxp-content-left pxp-half">
+        <div class="pxp-content-side-wrapper">
+          <div class="d-flex align-items-center w-100 pxp-content-side-search-form">
+            <div class="w-100">
+              <div class="row g-2">
+                <div class="col-5 col-sm-5 col-md-4 col-lg-3">
+                  <select class="form-select" id="pxp-p-search-status">
+                    <option value="buy" selected>Buy</option>
+                    <option value="rent">Rent</option>
+                  </select>
+                </div>
+                <div class="col-7 col-sm-7 col-md-8 col-lg-9 position-relative">
+                  <input type="text" class="form-control" placeholder="Search by City, Neighborhood, or Address"
+                    id="pxp-p-search-address">
+                  <span class="fa fa-search position-absolute top-50 end-0 translate-middle-y pe-3"></span>
+                </div>
+              </div>
+            </div>
+            <div class="ms-2">
+              <button class="btn btn-outline-secondary pxp-adv-toggle"><i class="fa fa-sliders"></i></button>
+            </div>
+          </div>
+          <div class="pxp-content-side-search-form-adv mb-3">
+            <div class="row g-3">
+              <div class="col-sm-6 col-md-3">
+                <label for="pxp-p-filter-price-min" class="form-label">Price</label>
+                <input type="text" class="form-control" placeholder="Min" id="pxp-p-filter-price-min">
+              </div>
+              <div class="col-sm-6 col-md-3">
+                <label for="pxp-p-filter-price-max" class="form-label d-sm-block d-none">&nbsp;</label>
+                <input type="text" class="form-control" placeholder="Max" id="pxp-p-filter-price-max">
+              </div>
+              <div class="col-sm-6 col-md-3">
+                <label for="pxp-p-filter-beds" class="form-label">Beds</label>
+                <select class="form-select" id="pxp-p-filter-beds">
+                  <option value="" selected>Any</option>
+                  <option value="">Studio</option>
+                  <option value="">1</option>
+                  <option value="">2</option>
+                  <option value="">3</option>
+                  <option value="">4</option>
+                  <option value="">5+</option>
+                </select>
+              </div>
+              <div class="col-sm-6 col-md-3">
+                <label for="pxp-p-filter-baths" class="form-label">Baths</label>
+                <select class="form-select" id="pxp-p-filter-baths">
+                  <option value="" selected>Any</option>
+                  <option value="">1+</option>
+                  <option value="">1.5+</option>
+                  <option value="">2+</option>
+                  <option value="">3+</option>
+                  <option value="">4+</option>
+                </select>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                <label for="pxp-p-filter-type" class="form-label">Type</label>
+                <select class="form-select" id="pxp-p-filter-type">
+                  <option value="">Select type</option>
+                  <option value="">Apartment</option>
+                  <option value="">House</option>
+                  <option value="">Townhome</option>
+                  <option value="">Multi-Family</option>
+                  <option value="">Land</option>
+                </select>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                <label for="pxp-p-filter-size-min" class="form-label">Size (sq ft)</label>
+                <input type="text" class="form-control" id="pxp-p-filter-size-min" placeholder="Min">
+              </div>
+              <div class="col-sm-6 col-md-4">
+                <label for="pxp-p-filter-size-max" class="form-label d-sm-block d-none">&nbsp;</label>
+                <input type="text" class="form-control" id="pxp-p-filter-size-max" placeholder="Max">
+              </div>
+            </div>
+
+            <div class="mt-3">
+              <label class="form-label">Amenities</label>
+              <div class="row g-2">
+                <div class="col-sm-6 col-md-4">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="1" id="amenity-internet">
+                    <label class="form-check-label" for="amenity-internet">Internet</label>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="1" id="amenity-garage">
+                    <label class="form-check-label" for="amenity-garage">Garage</label>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="1" id="amenity-ac">
+                    <label class="form-check-label" for="amenity-ac">Air Conditioning</label>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="1" id="amenity-dishwasher">
+                    <label class="form-check-label" for="amenity-dishwasher">Dishwasher</label>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="1" id="amenity-disposal">
+                    <label class="form-check-label" for="amenity-disposal">Disposal</label>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="1" id="amenity-balcony">
+                    <label class="form-check-label" for="amenity-balcony">Balcony</label>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="1" id="amenity-gym">
+                    <label class="form-check-label" for="amenity-gym">Gym</label>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="1" id="amenity-playroom">
+                    <label class="form-check-label" for="amenity-playroom">Playroom</label>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="1" id="amenity-bar">
+                    <label class="form-check-label" for="amenity-bar">Bar</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button class="pxp-filter-btn mt-3">Apply Filters</button>
+          </div>
+          <div class="row pb-4">
+            <div class="col-sm-6">
+              <h2 class="pxp-content-side-h2">1,684 Results</h2>
+            </div>
+            <div class="col-sm-6 d-flex justify-content-end align-items-center">
+              <div class="pxp-sort-form form-inline float-right">
+                <div class="form-group">
+                  <select class="form-select" id="pxp-sort-results">
+                    <option value="" selected>Default Sort</option>
+                    <option value="">Price (Lo-Hi)</option>
+                    <option value="">Price (Hi-Lo)</option>
+                    <option value="">Beds</option>
+                    <option value="">Baths</option>
+                    <option value="">Size</option>
+                  </select>
+                </div>
+                <a role="button" class="pxp-map-toggle form-group">
+                  <span class="fa fa-map"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12 col-md-6 ">
+              <a href="./single-property.html" class="pxp-results-card-1 rounded-3" data-prop="1">
+                <div id="card-carousel-1" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active" style="background-image: url(./Img/prop-1-1-gallery.jpg)"></div>
+                    <div class="carousel-item" style="background-image: url(./Img/prop-1-2-gallery.jpg);">
+                    </div>
+                    <div class="carousel-item" style="background-image: url(./Img/prop-1-3-gallery.jpg);">
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#card-carousel-1"
+                    data-bs-slide="prev">
+                    <span class="fa fa-angle-left"></span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#card-carousel-1"
+                    data-bs-slide="next">
+                    <span class="fa fa-angle-right"></span>
+                  </button>
+                </div>
+                <div class="pxp-results-card-1-gradient"></div>
+                <div class="pxp-results-card-1-details">
+                  <div class="pxp-results-card-1-details-title">Chic Apartment in Downtown</div>
+                  <div class="pxp-results-card-1-details-price">$890,000</div>
+                </div>
+                <div class="pxp-results-card-1-features">
+                  <span>2 BD <span>|</span> 2 BA <span>|</span> 920 SF</span>
+                </div>
+                <div class="pxp-results-card-1-save"><span class="fa-regular fa-star"></span></div>
+              </a>
+            </div>
+            <div class="col-sm-12 col-md-6 ">
+              <a href="./single-property.html" class="pxp-results-card-1 rounded-3" data-prop="2">
+                <div id="card-carousel-2" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active" style="background-image: url(./Img/prop-2-1-gallery.jpg)"></div>
+                    <div class="carousel-item" style="background-image: url(./Img/prop-2-2-gallery.jpg);">
+                    </div>
+                    <div class="carousel-item" style="background-image: url(./Img/prop-2-3-gallery.jpg);">
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#card-carousel-2"
+                    data-bs-slide="prev">
+                    <span class="fa fa-angle-left"></span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#card-carousel-2"
+                    data-bs-slide="next">
+                    <span class="fa fa-angle-right"></span>
+                  </button>
+                </div>
+                <div class="pxp-results-card-1-gradient"></div>
+                <div class="pxp-results-card-1-details">
+                  <div class="pxp-results-card-1-details-title">Colorful Little Apartment</div>
+                  <div class="pxp-results-card-1-details-price">$2,675</div>
+                </div>
+                <div class="pxp-results-card-1-features">
+                  <span>1 BD <span>|</span> 1 BA <span>|</span> 500 SF</span>
+                </div>
+                <div class="pxp-results-card-1-save"><span class="fa-regular fa-star"></span></div>
+              </a>
+            </div>
+            <div class="col-sm-12 col-md-6 ">
+              <a href="single-property.html" class="pxp-results-card-1 rounded-3" data-prop="3">
+                <div id="card-carousel-3" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active" style="background-image: url(./Img/prop-3-1-gallery.jpg); ">
+                    </div>
+                    <div class="carousel-item" style="background-image: url(./Img/prop-3-2-gallery.jpg); ">
+                    </div>
+                    <div class="carousel-item" style="background-image: url(./Img/prop-3-3-gallery.jpg); ">
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" data-bs-target="#card-carousel-3" data-bs-slide="prev">
+                    <span class="fas fa-angle-left" aria-hidden="true"></span>
+                  </button>
+                  <button class="carousel-control-next" data-bs-target="#card-carousel-3" data-bs-slide="next">
+                    <span class="fas fa-angle-right" aria-hidden="true"></span>
+                  </button>
+                </div>
+                <div class="pxp-results-card-1-gradient"></div>
+                <div class="pxp-results-card-1-details">
+                  <div class="pxp-results-card-1-details-title">Cozy Two Bedroom Apartment</div>
+                  <div class="pxp-results-card-1-details-price">$960,000</div>
+                </div>
+                <div class="pxp-results-card-1-features">
+                  <span>2 BD | 2 BA | 870 SF</span>
+                </div>
+                <div class="pxp-results-card-1-save"><span class="far fa-star"></span></div>
+              </a>
+            </div>
+            <div class="col-sm-12 col-md-6 ">
+              <a href="single-property.html" class="pxp-results-card-1 rounded-3" data-prop="4">
+                <div id="card-carousel-4" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active" style="background-image: url(./Img/prop-7-1-gallery.jpg); ">
+                    </div>
+                    <div class="carousel-item" style="background-image: url(./Img/prop-7-2-gallery.jpg); ">
+                    </div>
+                    <div class="carousel-item" style="background-image: url(./Img/prop-7-3-gallery.jpg); ">
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" data-bs-target="#card-carousel-4" data-bs-slide="prev">
+                    <span class="fas fa-angle-left" aria-hidden="true"></span>
+                  </button>
+                  <button class="carousel-control-next" data-bs-target="#card-carousel-4" data-bs-slide="next">
+                    <span class="fas fa-angle-right" aria-hidden="true"></span>
+                  </button>
+                </div>
+                <div class="pxp-results-card-1-gradient"></div>
+                <div class="pxp-results-card-1-details">
+                  <div class="pxp-results-card-1-details-title">Beautiful House in Marina</div>
+                  <div class="pxp-results-card-1-details-price">$5,198,000</div>
+                </div>
+                <div class="pxp-results-card-1-features">
+                  <span>5 BD | 4.5 BA | 3,945 SF</span>
+                </div>
+                <div class="pxp-results-card-1-save"><span class="far fa-star"></span></div>
+              </a>
+            </div>
+
+            <!-- Property Card 2 -->
+            <div class="col-sm-12 col-md-6 ">
+              <a href="single-property.html" class="pxp-results-card-1 rounded-3" data-prop="5">
+                <div id="card-carousel-5" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active" style="background-image: url(./Img/prop-8-1-gallery.jpg); ">
+                    </div>
+                    <div class="carousel-item" style="background-image: url(./Img/prop-8-2-gallery.jpg); ">
+                    </div>
+                    <div class="carousel-item" style="background-image: url(./Img/prop-8-3-gallery.jpg); ">
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" data-bs-target="#card-carousel-5" data-bs-slide="prev">
+                    <span class="fas fa-angle-left" aria-hidden="true"></span>
+                  </button>
+                  <button class="carousel-control-next" data-bs-target="#card-carousel-5" data-bs-slide="next">
+                    <span class="fas fa-angle-right" aria-hidden="true"></span>
+                  </button>
+                </div>
+                <div class="pxp-results-card-1-gradient"></div>
+                <div class="pxp-results-card-1-details">
+                  <div class="pxp-results-card-1-details-title">Modern Residence</div>
+                  <div class="pxp-results-card-1-details-price">$7,995</div>
+                </div>
+                <div class="pxp-results-card-1-features">
+                  <span>4 BD | 1.5 BA | 2,240 SF</span>
+                </div>
+                <div class="pxp-results-card-1-save"><span class="far fa-star"></span></div>
+              </a>
+            </div>
+
+            <!-- Property Card 3 -->
+            <div class="col-sm-12 col-md-6 ">
+              <a href="single-property.html" class="pxp-results-card-1 rounded-3" data-prop="6">
+                <div id="card-carousel-6" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active" style="background-image: url(./Img/prop-9-1-gallery.jpg); ">
+                    </div>
+                    <div class="carousel-item" style="background-image: url(./Img/prop-9-2-gallery.jpg); ">
+                    </div>
+                    <div class="carousel-item" style="background-image: url(./Img/prop-9-3-gallery.jpg); ">
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" data-bs-target="#card-carousel-6" data-bs-slide="prev">
+                    <span class="fas fa-angle-left" aria-hidden="true"></span>
+                  </button>
+                  <button class="carousel-control-next" data-bs-target="#card-carousel-6" data-bs-slide="next">
+                    <span class="fas fa-angle-right" aria-hidden="true"></span>
+                  </button>
+                </div>
+                <div class="pxp-results-card-1-gradient"></div>
+                <div class="pxp-results-card-1-details">
+                  <div class="pxp-results-card-1-details-title">Luxury Mansion</div>
+                  <div class="pxp-results-card-1-details-price">$5,430,000</div>
+                </div>
+                <div class="pxp-results-card-1-features">
+                  <span>4 BD | 5 BA | 5,200 SF</span>
+                </div>
+                <div class="pxp-results-card-1-save"><span class="far fa-star"></span></div>
+              </a>
+            </div>
+
+          </div>
+          <ul class="pagination pxp-paginantion mt-2 mt-md-4">
+            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">Next <span class="fa fa-angle-right"></span></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </main>
 
   <footer class="mt-100 pt-100 pb-100 dark-mode">
     <div class="container">
@@ -143,6 +504,61 @@
   <!-- jQuery Minified (Latest Version) -->
   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
   <script src="./script.js"></script>
+
+  <script>
+    $('.pxp-adv-toggle').click(function () {
+      $(this).toggleClass('pxp-active');
+      $('.pxp-content-side-search-form-adv').slideToggle();
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+      function initMap() {
+        const centerPoint = { lat: 37.7577627, lng: -122.4726194 };
+        const map = new google.maps.Map(document.getElementById("map"), {
+          center: centerPoint,
+          zoom: 12,
+          mapTypeId: "roadmap",
+        });
+
+        const properties = [
+          {
+            title: "Chic Apartment in Downtown",
+            position: { lat: 37.779023, lng: -122.488622 },
+            price: "$890,000"
+          },
+          {
+            title: "Luxury Mansion",
+            position: { lat: 37.7985699, lng: -122.4446982 },
+            price: "$5,430,000"
+          },
+          {
+            title: "Modern Residence",
+            position: { lat: 37.7883186, lng: -122.4897848 },
+            price: "$7,995"
+          }
+        ];
+
+        properties.forEach(property => {
+          const marker = new google.maps.Marker({
+            position: property.position,
+            map: map,
+            title: property.title
+          });
+
+          const infoWindow = new google.maps.InfoWindow({
+            content: `<h6>${property.title}</h6><p>Price: ${property.price}</p>`
+          });
+
+          marker.addListener("click", () => {
+            infoWindow.open(map, marker);
+          });
+        });
+      }
+
+      initMap();
+    });
+
+  </script>
 </body>
 
 </html>

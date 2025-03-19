@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>resideo</title>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome 6 CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- Owl Carousel CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+  <link rel="stylesheet" href="./Fonts/font.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body class="dark-mode">
+  <header id="myHeader" class="pxp-header properties-header dark-mode">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="logo col-5 col-md-2">
+          <a target="_self" href="./index.html" alt="" class="pxp-logo text-decoration-none">
+            resideo.
+          </a>
+        </div>
+        <div class="col-2 col-md-8 text-center">
+          <ul class="pxp-nav list-inline">
+            <li class="list-inline-item">
+              <a target="_self" href="./index.html" target="_self">Home</a>
+            </li>
+            <li class="list-inline-item">
+              <a target="_self" href="javascript:viod(0);">Properties</a>
+              <ul class="pxp-nav-sub rounded-3">
+                <li><a target="_self" href="./properties.html">All Properties</a></li>
+                <li><a target="_self" href="./single-property.html">Single Property</a></li>
+                <li><a target="_self" href="./submit-property.html">Submit New Property</a></li>
+              </ul>
+            </li>
+            <li class="list-inline-item">
+              <a target="_self" href="javascript:viod(0);">Blog</a>
+              <ul class="pxp-nav-sub rounded-3" style="display: none;">
+                <li><a target="_self" href="./blog.html">All Blog Posts</a></li>
+                <li><a target="_self" href="./single-post.html">Single Blog Post</a></li>
+              </ul>
+            </li>
+            <li class="list-inline-item">
+              <a target="_self" href="javascript:void(0);">Themes</a>
+              <ul class="pxp-nav-sub rounded-3">
+                <li><a target="_self" href="javascript:void(0);" id="lightTheme">Light</a></li>
+                <li><a target="_self" href="javascript:void(0);" id="darkTheme">Dark</a></li>
+              </ul>
+            </li>
+            <li class="list-inline-item pxp-is-last"><a target="_self" href="./contact.html">Contact Us</a></li>
+            <li class="list-inline-item pxp-has-btns">
+              <div class="pxp-user-btns">
+                <a target="_self" href="javascript:void(0);" class="pxp-user-btns-signup pxp-signup-trigger">Sign Up</a>
+                <a target="_self" href="javascript:void(0);" class="pxp-user-btns-login pxp-signin-trigger">Sign In</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="col-5 col-md-2 text-end">
+          <a target="_self" href="javascript:void(0);" class="pxp-header-nav-trigger"><i
+              class="fa-solid fa-bars"></i></a>
+          <a target="_self" href="javascript:void(0);" class="pxp-header-user pxp-signin-trigger"><i
+              class="fa-regular fa-user"></i></a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="dark-mode">
+    <section class="pxp-blog-posts pxp-content-wrapper  mt-100">
+      <div class="container">
+        <h1 class="pxp-page-header">Latest Articles</h1>
+        <p class="pxp-text-light">Read our latest articles on real estate, architecture, interior design, and more</p>
+        <div class="pxp-blog-posts-carousel-1 mt-4 mt-md-5">
+          <!-- Image Carousel -->
+          <div id="pxp-blog-posts-carousel-1-img" class="carousel slide pxp-blog-posts-carousel-1-img"
+            data-bs-ride="carousel" data-bs-interval="5000">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="pxp-hero-bg" style="background-image: url('./Img/prop-7-2-big.jpg');"></div>
+              </div>
+              <div class="carousel-item">
+                <div class="pxp-hero-bg" style="background-image: url('./Img/prop-3-1-big.jpg');"></div>
+              </div>
+              <div class="carousel-item">
+                <div class="pxp-hero-bg" style="background-image: url('./Img/prop-3-3-big.jpg');"></div>
+              </div>
+              <div class="carousel-item">
+                <div class="pxp-hero-bg" style="background-image: url('./Img/prop-1-1-big.jpg');"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Carousel Controls -->
+          <div class="pxp-carousel-controls">
+            <a class="pxp-carousel-control-prev" role="button" data-slide="prev">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32.414" height="20.828" viewBox="0 0 32.414 20.828">
+                <g id="Group_30" data-name="Group 30" transform="translate(-1845.086 -1586.086)">
+                  <line id="Line_2" data-name="Line 2" x1="30" transform="translate(1846.5 1596.5)" fill="none"
+                    stroke="javascript:void(0);333" stroke-linecap="round" stroke-width="2"></line>
+                  <line id="Line_3" data-name="Line 3" x1="9" y2="9" transform="translate(1846.5 1587.5)" fill="none"
+                    stroke="javascript:void(0);333" stroke-linecap="round" stroke-width="2"></line>
+                  <line id="Line_4" data-name="Line 4" x1="9" y1="9" transform="translate(1846.5 1596.5)" fill="none"
+                    stroke="javascript:void(0);333" stroke-linecap="round" stroke-width="2"></line>
+                </g>
+              </svg>
+            </a>
+            <a class="pxp-carousel-control-next" role="button" data-slide="next">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32.414" height="20.828" viewBox="0 0 32.414 20.828">
+                <g id="Symbol_1_1" data-name="Symbol 1 – 1" transform="translate(-1847.5 -1589.086)">
+                  <line id="Line_5" data-name="Line 2" x2="30" transform="translate(1848.5 1599.5)" fill="none"
+                    stroke="javascript:void(0);333" stroke-linecap="round" stroke-width="2"></line>
+                  <line id="Line_6" data-name="Line 3" x2="9" y2="9" transform="translate(1869.5 1590.5)" fill="none"
+                    stroke="javascript:void(0);333" stroke-linecap="round" stroke-width="2"></line>
+                  <line id="Line_7" data-name="Line 4" y1="9" x2="9" transform="translate(1869.5 1599.5)" fill="none"
+                    stroke="javascript:void(0);333" stroke-linecap="round" stroke-width="2"></line>
+                </g>
+              </svg>
+            </a>
+          </div>
+          <!-- Caption Carousel -->
+          <div class="pxp-blog-posts-carousel-1-caption-container">
+            <div id="pxp-blog-posts-carousel-1-caption" class="carousel slide" data-bs-ride="false">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <h4 class="pxp-blog-posts-carousel-1-caption-category">Architecture</h4>
+                  <h3 class="pxp-blog-posts-carousel-1-caption-title">What to Expect When Working with an Interior
+                    Designer</h3>
+                  <p class="pxp-blog-posts-carousel-1-caption-summary">It is a long established fact that a reader will
+                    be
+                    distracted by readable content.</p>
+                  <a href="./single-post.html" class="pxp-primary-cta text-uppercase mt-3 mt-md-4 pxp-animate">Read
+                    Article</a>
+                </div>
+                <div class="carousel-item">
+                  <h4 class="pxp-blog-posts-carousel-1-caption-category">Interior Design</h4>
+                  <h3 class="pxp-blog-posts-carousel-1-caption-title">Private Contemporary Home Balancing Openness</h3>
+                  <p class="pxp-blog-posts-carousel-1-caption-summary">The point of using Lorem Ipsum is that it has a
+                    more-or-less normal distribution of letters.</p>
+                  <a href="./single-post.html" class="pxp-primary-cta text-uppercase mt-3 mt-md-4 pxp-animate">Read
+                    Article</a>
+                </div>
+                <div class="carousel-item">
+                  <h4 class="pxp-blog-posts-carousel-1-caption-category">Architecture</h4>
+                  <h3 class="pxp-blog-posts-carousel-1-caption-title">How Does A Designer Apartment Look Like</h3>
+                  <p class="pxp-blog-posts-carousel-1-caption-summary">Many desktop publishing packages and web page
+                    editors now use Lorem Ipsum.</p>
+                  <a href="./single-post.html" class="pxp-primary-cta text-uppercase mt-3 mt-md-4 pxp-animate">Read
+                    Article</a>
+                </div>
+                <div class="carousel-item">
+                  <h4 class="pxp-blog-posts-carousel-1-caption-category">Interior Design</h4>
+                  <h3 class="pxp-blog-posts-carousel-1-caption-title">Luminous Apartment Flaunting Modern Style</h3>
+                  <p class="pxp-blog-posts-carousel-1-caption-summary">There are many variations of passages of Lorem
+                    Ipsum available.</p>
+                  <a href="./single-post.html" class="pxp-primary-cta text-uppercase mt-3 mt-md-4 pxp-animate">Read
+                    Article</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row pt-100">
+          <div class="col-sm-12 col-lg-9 pt-100">
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+              <div class="col">
+                <a href="./single-post.html" class="pxp-posts-1-item d-flex flex-column h-100">
+                  <div class="pxp-posts-1-item-fig-container">
+                    <div class="pxp-posts-1-item-fig pxp-cover"
+                      style="background-image: url(./Img/post-1.jpg); height: 250px; background-size: cover; background-position: center;">
+                    </div>
+                  </div>
+                  <div class="pxp-posts-1-item-details flex-grow-1 p-3">
+                    <div class="pxp-posts-1-item-details-category  fw-bold">Interior Design</div>
+                    <h5 class="pxp-posts-1-item-details-title">What to Expect When Working with an Interior Designer
+                    </h5>
+                    <div class="pxp-posts-1-item-details-date text-muted mt-2">April 9, 2021</div>
+                    <div class="pxp-posts-1-item-cta text-uppercase mt-3  fw-bold">Read Article →</div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col">
+                <a href="./single-post.html" class="pxp-posts-1-item d-flex flex-column h-100">
+                  <div class="pxp-posts-1-item-fig-container">
+                    <div class="pxp-posts-1-item-fig pxp-cover"
+                      style="background-image: url(./Img/post-2.jpg); height: 250px; background-size: cover; background-position: center;">
+                    </div>
+                  </div>
+                  <div class="pxp-posts-1-item-details flex-grow-1 p-3">
+                    <div class="pxp-posts-1-item-details-category  fw-bold">Architecture</div>
+                    <h5 class="pxp-posts-1-item-details-title">Private Contemporary Home Balancing Openness</h5>
+                    <div class="pxp-posts-1-item-details-date text-muted mt-2">April 9, 2021</div>
+                    <div class="pxp-posts-1-item-cta text-uppercase mt-3  fw-bold">Read Article →</div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col">
+                <a href="./single-post.html" class="pxp-posts-1-item d-flex flex-column h-100">
+                  <div class="pxp-posts-1-item-fig-container">
+                    <div class="pxp-posts-1-item-fig pxp-cover"
+                      style="background-image: url(./Img/post-3.jpg); height: 250px; background-size: cover; background-position: center;">
+                    </div>
+                  </div>
+                  <div class="pxp-posts-1-item-details flex-grow-1 p-3">
+                    <div class="pxp-posts-1-item-details-category  fw-bold">Interior Design</div>
+                    <h5 class="pxp-posts-1-item-details-title">Stylish Modern Ranch Exuding a Welcoming Feel</h5>
+                    <div class="pxp-posts-1-item-details-date text-muted mt-2">April 9, 2021</div>
+                    <div class="pxp-posts-1-item-cta text-uppercase mt-3  fw-bold">Read Article →</div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col">
+                <a href="./single-post.html" class="pxp-posts-1-item d-flex flex-column h-100">
+                  <div class="pxp-posts-1-item-fig-container">
+                    <div class="pxp-posts-1-item-fig pxp-cover"
+                      style="background-image: url(./Img/post-4.jpg); height: 250px; background-size: cover; background-position: center;">
+                    </div>
+                  </div>
+                  <div class="pxp-posts-1-item-details flex-grow-1 p-3">
+                    <div class="pxp-posts-1-item-details-category  fw-bold">Interior Design</div>
+                    <h5 class="pxp-posts-1-item-details-title">What to Expect When Working with an Interior Designer
+                    </h5>
+                    <div class="pxp-posts-1-item-details-date text-muted mt-2">April 9, 2021</div>
+                    <div class="pxp-posts-1-item-cta text-uppercase mt-3  fw-bold">Read Article →</div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col">
+                <a href="./single-post.html" class="pxp-posts-1-item d-flex flex-column h-100">
+                  <div class="pxp-posts-1-item-fig-container">
+                    <div class="pxp-posts-1-item-fig pxp-cover"
+                      style="background-image: url(./Img/post-5.jpg); height: 250px; background-size: cover; background-position: center;">
+                    </div>
+                  </div>
+                  <div class="pxp-posts-1-item-details flex-grow-1 p-3">
+                    <div class="pxp-posts-1-item-details-category  fw-bold">Architecture</div>
+                    <h5 class="pxp-posts-1-item-details-title">Private Contemporary Home Balancing Openness</h5>
+                    <div class="pxp-posts-1-item-details-date text-muted mt-2">April 9, 2021</div>
+                    <div class="pxp-posts-1-item-cta text-uppercase mt-3  fw-bold">Read Article →</div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col">
+                <a href="./single-post.html" class="pxp-posts-1-item d-flex flex-column h-100">
+                  <div class="pxp-posts-1-item-fig-container">
+                    <div class="pxp-posts-1-item-fig pxp-cover"
+                      style="background-image: url(./Img/post-6.jpg); height: 250px; background-size: cover; background-position: center;">
+                    </div>
+                  </div>
+                  <div class="pxp-posts-1-item-details flex-grow-1 p-3">
+                    <div class="pxp-posts-1-item-details-category  fw-bold">Interior Design</div>
+                    <h5 class="pxp-posts-1-item-details-title">Stylish Modern Ranch Exuding a Welcoming Feel</h5>
+                    <div class="pxp-posts-1-item-details-date text-muted mt-2">April 9, 2021</div>
+                    <div class="pxp-posts-1-item-cta text-uppercase mt-3  fw-bold">Read Article →</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <ul class="pagination pxp-paginantion mt-3 mt-md-4">
+              <li class="page-item active"><a class="page-link" href="javascript:void(0);">1</a></li>
+              <li class="page-item"><a class="page-link" href="javascript:void(0);">2</a></li>
+              <li class="page-item"><a class="page-link" href="javascript:void(0);">3</a></li>
+              <li class="page-item"><a class="page-link" href="javascript:void(0);">Next <span
+                    class="fa fa-angle-right"></span></a></li>
+            </ul>
+
+          </div>
+          <div class="col-sm-12 col-lg-3 mt-4 mt-lg-0 pt-100">
+            <div class="pxp-blog-posts-side-section">
+              <h3>Search Articles</h3>
+              <div class="mt-3 mt-md-4">
+                <div class="form-group">
+                  <input type="text" class="form-control pxp-is-address" placeholder="Search">
+                  <span class="fa fa-search"></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="pxp-blog-posts-side-section mt-4">
+              <h3>Categories</h3>
+              <ul class="pxp-blog-posts-side-v-list list-unstyled mt-3 mt-md-4">
+                <li><a href="javascript:void(0);">Fashion (3)</a></li>
+                <li><a href="javascript:void(0);">Lifestyle (2)</a></li>
+                <li><a href="javascript:void(0);">Personal (2)</a></li>
+                <li><a href="javascript:void(0);">Stories (2)</a></li>
+                <li><a href="javascript:void(0);">Travel (4)</a></li>
+              </ul>
+            </div>
+
+            <div class="pxp-blog-posts-side-section mt-4 mt-md-5">
+              <h3>Tags</h3>
+              <div class="pxp-blog-posts-side-tags mt-3 mt-md-4">
+                <a href="javascript:void(0);">Premium (10)</a>
+                <a href="javascript:void(0);">Interior (12)</a>
+                <a href="javascript:void(0);">Stories (6)</a>
+                <a href="javascript:void(0);">Fashion (2)</a>
+                <a href="javascript:void(0);">Architecture (8)</a>
+                <a href="javascript:void(0);">Lifestyle (5)</a>
+                <a href="javascript:void(0);">Travel (10)</a>
+                <a href="javascript:void(0);">Personal (11)</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="pxp-full pxp-cover pxp-blog py-5 mt-5" style="background-image: url(./Img/newsletter-1-fig.jpg);">
+      <div class="container ">
+        <h2 class="pxp-section-h2">Stay Up to Date</h2>
+        <p class="pxp-text-light">Subscribe to our newsletter to receive our weekly feed</p>
+        <div class="row mt-4">
+          <div class="col-12 col-sm-6">
+            <form action="blog.html" class="pxp-newsletter-1-form">
+              <input type="email" class="form-control" placeholder="Enter your email..." required>
+              <a href="javascript:void(0);"
+                class="pxp-primary-cta text-uppercase pxp-animate mt-3 mt-md-4">Subscribe</a>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="mt-100 pt-100 pb-100 dark-mode">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <div class="pxp-footer-logo fw-bold fs-4">resideo.</div>
+          <div class="pxp-footer-address mt-2 ">
+            90 Fifth Avenue, 3rd Floor<br>
+            San Francisco, CA 1980<br>
+            (123) 456-7890
+          </div>
+          <div class="pxp-footer-social mt-3">
+            <a href="javascript:void(0);" class="text-dark me-3"><i class="fab fa-instagram"></i></a>
+            <a href="javascript:void(0);" class="text-dark me-3"><i class="fab fa-facebook-square"></i></a>
+            <a href="javascript:void(0);" class="text-dark"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-8">
+          <div class="row">
+            <div class="col-md-4 mb-4 mb-md-0">
+              <h5 class="pxp-footer-header fw-semibold">Company</h5>
+              <ul class="list-unstyled pxp-footer-links mt-2">
+                <li><a href="javascript:void(0);" class="text-decoration-none ">About Us</a></li>
+                <li><a href="javascript:void(0);" class="text-decoration-none ">Agents</a></li>
+                <li><a href="javascript:void(0);" class="text-decoration-none ">Blog</a></li>
+                <li><a href="javascript:void(0);" class="text-decoration-none ">Demos</a></li>
+                <li><a href="javascript:void(0);" class="text-decoration-none ">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4 mb-4 mb-md-0">
+              <h5 class="pxp-footer-header fw-semibold">Actions</h5>
+              <ul class="list-unstyled pxp-footer-links mt-2">
+                <li><a href="javascript:void(0);" class="text-decoration-none ">Buy Properties</a></li>
+                <li><a href="javascript:void(0);" class="text-decoration-none ">Rent Properties</a></li>
+                <li><a href="javascript:void(0);" class="text-decoration-none ">Sell Properties</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <h5 class="pxp-footer-header fw-semibold">Explore</h5>
+              <ul class="list-unstyled pxp-footer-links mt-2">
+                <li><a href="javascript:void(0);" class="text-decoration-none ">Homes for Rent</a></li>
+                <li><a href="javascript:void(0);" class="text-decoration-none ">Apartments for Rent</a></li>
+                <li><a href="javascript:void(0);" class="text-decoration-none ">Homes for Sale</a></li>
+                <li><a href="javascript:void(0);" class="text-decoration-none ">Apartments for Sale</a></li>
+                <li><a href="javascript:void(0);" class="text-decoration-none ">CRM</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pxp-footer-bottom mt-4 d-flex flex-column ">
+        <div>
+          <a href="javascript:void(0);" class="text-decoration-none ">Terms &amp; Conditions</a> &amp;
+          <a href="javascript:void(0);" class="text-decoration-none ">Privacy Policy</a>
+        </div>
+        <div class="pxp-footer-copyright">© Resideo. All Rights Reserved. 2025</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Owl Carousel JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <!-- jQuery Minified (Latest Version) -->
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="./script.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      $('javascript:void(0);pxp-blog-posts-carousel-1-img').on('slide.bs.carousel', function (event) {
+        let nextIndex = $(event.relatedTarget).index();
+        let captionCarousel = new bootstrap.Carousel($('javascript:void(0);pxp-blog-posts-carousel-1-caption')[0]);
+        captionCarousel.to(nextIndex);
+      });
+    });
+
+  </script>
+</body>
+
+</html>
