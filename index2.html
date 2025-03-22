@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>resideo</title>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome 6 CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- Owl Carousel CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+
+  <link rel="stylesheet" href="./Fonts/font.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body class="dark-mode">
+  <header id="myHeader" class="pxp-header dark-mode">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="logo col-5 col-md-2">
+          <a target="_self" href="./index.html" alt="" class="pxp-logo text-decoration-none">
+            resideo.
+          </a>
+        </div>
+        <div class="col-2 col-md-8 text-center">
+          <ul class="pxp-nav list-inline">
+            <li class="list-inline-item">
+              <a target="_self" href="javascript:viod(0);" target="_self">Home</a>
+              <ul class="pxp-nav-sub rounded-3">
+                <li><a target="_self" href="./index1.html">Version 1</a></li>
+                <li><a target="_self" href="./index2.html">Version 2</a></li>
+                <li><a target="_self" href="./index3.html">Version 3</a></li>
+                <li><a target="_self" href="./index4.html">Version 4</a></li>
+                <li><a target="_self" href="./index5.html">Version 5</a></li>
+                <li><a target="_self" href="./index.html">Version 6</a></li>
+              </ul>
+            </li>
+            <li class="list-inline-item">
+              <a target="_self" href="javascript:viod(0);">Properties</a>
+              <ul class="pxp-nav-sub rounded-3">
+                <li><a target="_self" href="./properties.html">All Properties</a></li>
+                <li><a target="_self" href="./single-property.html">Single Property</a></li>
+                <li><a target="_self" href="./submit-property.html">Submit New Property</a></li>
+              </ul>
+            </li>
+            <li class="list-inline-item">
+              <a target="_self" href="javascript:viod(0);">Blog</a>
+              <ul class="pxp-nav-sub rounded-3" style="display: none;">
+                <li><a target="_self" href="./blog.html">All Blog Posts</a></li>
+                <li><a target="_self" href="./single-post.html">Single Blog Post</a></li>
+              </ul>
+            </li>
+            <li class="list-inline-item">
+              <a target="_self" href="javascript:void(0);">Themes</a>
+              <ul class="pxp-nav-sub rounded-3">
+                <li><a target="_self" href="javascript:void(0);" id="lightTheme">Light</a></li>
+                <li><a target="_self" href="javascript:void(0);" id="darkTheme">Dark</a></li>
+              </ul>
+            </li>
+            <li class="list-inline-item pxp-is-last"><a target="_self" href="./contact.html">Contact Us</a></li>
+            <li class="list-inline-item pxp-has-btns">
+              <div class="pxp-user-btns">
+                <a target="_self" href="javascript:void(0);" class="pxp-user-btns-signup pxp-signup-trigger">Sign Up</a>
+                <a target="_self" href="javascript:void(0);" class="pxp-user-btns-login pxp-signin-trigger">Sign In</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="col-5 col-md-2 text-end">
+          <a target="_self" href="javascript:void(0);" class="pxp-header-nav-trigger"><i
+              class="fa-solid fa-bars"></i></a>
+          <a target="_self" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#pxp-signin-modal"
+            class="pxp-header-user pxp-signin-trigger"><i class="fa-regular fa-user"></i></a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="modal fade" id="pxp-signin-modal" tabindex="-1" aria-labelledby="pxpSigninModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h5 class="modal-title" id="pxpSigninModal">Welcome back!</h5>
+          <form class="mt-4">
+            <div class="mb-3">
+              <label for="pxp-signin-email" class="form-label">Email</label>
+              <input type="text" class="form-control" id="pxp-signin-email" placeholder="Enter your email address">
+            </div>
+            <div class="mb-3">
+              <label for="pxp-signin-pass" class="form-label">Password</label>
+              <input type="password" class="form-control" id="pxp-signin-pass" placeholder="Enter your password">
+            </div>
+            <div class="d-grid">
+              <button type="submit" class="pxp-agent-contact-modal-btn">Sign In</button>
+            </div>
+          </form>
+          <div class="form-group mt-4 text-center pxp-modal-small">
+            <a href="#" class="pxp-modal-link">Forgot password?</a>
+          </div>
+          <div class="text-center pxp-modal-small">
+            New to Resideo? <a href="javascript:void(0);" class="pxp-modal-link pxp-signup-trigger">Create an
+              account</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <main class="dark-mode">
+    <section class="pxp-content v1">
+      <div class="pxp-hero vh-100">
+        <!-- Main Carousel -->
+        <div id="pxp-hero-props-carousel-1" class="carousel slide pxp-hero-props-carousel-1" data-bs-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-bs-target="#pxp-hero-props-carousel-1" data-bs-slide-to="0" class="pxp-cover active"
+              style="background-image: url('./Img/prop-1-1-thmb.jpg');"></li>
+            <li data-bs-target="#pxp-hero-props-carousel-1" data-bs-slide-to="1" class="pxp-cover"
+              style="background-image: url('./Img/prop-2-1-thmb.jpg');"></li>
+            <li data-bs-target="#pxp-hero-props-carousel-1" data-bs-slide-to="2" class="pxp-cover"
+              style="background-image: url('./Img/hero-prop-3-thmb.jpg');"></li>
+            <li data-bs-target="#pxp-hero-props-carousel-1" data-bs-slide-to="3" class="pxp-cover"
+              style="background-image: url('./Img/hero-prop-4-thmb.jpg');"></li>
+          </ol>
+
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="pxp-hero-bg" style="background-image: url('./Img/prop-1-1-big.jpg');"></div>
+              <div class="pxp-caption">
+                <h3>Chic Apartment in Downtown</h3>
+                <p>2 BD | 2 BA | 920 SF</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="pxp-hero-bg" style="background-image: url('./Img/prop-2-1-big.jpg');"></div>
+              <div class="pxp-caption">
+                <h3>Colorful Little Apartment</h3>
+                <p>1 BD | 1 BA | 500 SF</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="pxp-hero-bg" style="background-image: url('./Img/hero-prop-3.jpg');"></div>
+              <div class="pxp-caption">
+                <h3>Cozy Two Bedroom Apartment</h3>
+                <p>2 BD | 2 BA | 870 SF</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="pxp-hero-bg" style="background-image: url('./Img/hero-prop-4.jpg');"></div>
+              <div class="pxp-caption">
+                <h3>Modern Residence</h3>
+                <p>4 BD | 1.5 BA | 2,240 SF</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Custom Carousel Controls -->
+          <div class="pxp-carousel-controls">
+            <a class="pxp-carousel-control-prev" role="button" data-bs-target="#pxp-hero-props-carousel-1"
+              data-bs-slide="prev">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32.414" height="20.828" viewBox="0 0 32.414 20.828">
+                <g id="Group_30" transform="translate(-1845.086 -1586.086)">
+                  <line x1="30" transform="translate(1846.5 1596.5)" stroke="#000" stroke-width="2"></line>
+                  <line x1="9" y2="9" transform="translate(1846.5 1587.5)" stroke="#000" stroke-width="2"></line>
+                  <line x1="9" y1="9" transform="translate(1846.5 1596.5)" stroke="#000" stroke-width="2"></line>
+                </g>
+              </svg>
+            </a>
+            <a class="pxp-carousel-control-next" role="button" data-bs-target="#pxp-hero-props-carousel-1"
+              data-bs-slide="next">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32.414" height="20.828" viewBox="0 0 32.414 20.828">
+                <g id="Symbol_1_1" transform="translate(-1847.5 -1589.086)">
+                  <line x2="30" transform="translate(1848.5 1599.5)" stroke="#000" stroke-width="2"></line>
+                  <line x2="9" y2="9" transform="translate(1869.5 1590.5)" stroke="#000" stroke-width="2"></line>
+                  <line y1="9" x2="9" transform="translate(1869.5 1599.5)" stroke="#000" stroke-width="2"></line>
+                </g>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Price Carousel -->
+        <div id="pxp-hero-props-carousel-1-prices"
+          class="carousel slide pxp-hero-props-carousel-1-prices pxp-price-active" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-slide="0" style="background-color: #e1a447;">
+              <div class="pxp-progress"></div>
+              <div class="pxp-price"><span>$890,000</span></div>
+              <a href="single-property.html" class="pxp-cta text-uppercase pxp-animate">View Details</a>
+            </div>
+            <div class="carousel-item" data-slide="1" style="background-color: #837c12;">
+              <div class="pxp-progress"></div>
+              <div class="pxp-price"><span>$2,675</span></div>
+              <a href="single-property.html" class="pxp-cta text-uppercase pxp-animate">View Details</a>
+            </div>
+            <div class="carousel-item" data-slide="2" style="background-color: #687389;">
+              <div class="pxp-progress"></div>
+              <div class="pxp-price"><span>$960,000</span></div>
+              <a href="single-property.html" class="pxp-cta text-uppercase pxp-animate">View Details</a>
+            </div>
+            <div class="carousel-item" data-slide="3" style="background-color: #6e463a;">
+              <div class="pxp-progress"></div>
+              <div class="pxp-price"><span>$7,995</span></div>
+              <a href="single-property.html" class="pxp-cta text-uppercase pxp-animate">View Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+      <div class="pxp-services-h pt-100 pb-100">
+        <div class="container">
+          <h2 class="pxp-section-h2">Why Choose Us</h2>
+          <p class="pxp-text-light">We offer perfect real estate services</p>
+
+          <div class="pxp-services-h-container mt-4 mt-md-5">
+            <div class="pxp-services-h-fig pxp-cover pxp-animate-in rounded-3 pxp-in"
+              style="background-image: url(./Img/services-h-fig.jpg);"></div>
+            <div class="pxp-services-h-items pxp-animate-in ml-0 ml-lg-5 mt-4 mt-md-5 mt-lg-0 pxp-in">
+              <div class="pxp-services-h-item">
+                <div class="media">
+                  <img src="./Img/service-icon-1-1.svg" class="mr-4" alt="...">
+                  <div class="media-body">
+                    <h5 class="mt-0">Find your future home</h5>
+                    We help you find a new home by offering a smart real estate experience
+                  </div>
+                </div>
+              </div>
+              <div class="pxp-services-h-item mt-3 mt-md-4">
+                <div class="media">
+                  <img src="./Img/service-icon-2-1.svg" class="mr-4" alt="...">
+                  <div class="media-body">
+                    <h5 class="mt-0">Experienced agents</h5>
+                    Find an agent who knows your market best
+                  </div>
+                </div>
+              </div>
+              <div class="pxp-services-h-item mt-3 mt-md-4">
+                <div class="media">
+                  <img src="./Img/service-icon-3-1.svg" class="mr-4" alt="...">
+                  <div class="media-body">
+                    <h5 class="mt-0">Buy or rent homes</h5>
+                    Millions of houses and apartments in your favourite cities
+                  </div>
+                </div>
+              </div>
+              <div class="pxp-services-h-item mt-3 mt-md-4">
+                <div class="media">
+                  <img src="./Img/service-icon-4-1.svg" class="mr-4" alt="...">
+                  <div class="media-body">
+                    <h5 class="mt-0">List your own property</h5>
+                    Sign up now and sell or rent your own properties
+                  </div>
+                </div>
+              </div>
+              <a href="contact.html"
+                class="pxp-primary-cta text-uppercase mt-4 mt-md-5 pxp-animate pxp-animate-in pxp-in">Learn more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid pxp-props-carousel-right pxp-has-intro mt-100">
+        <div class="pxp-props-carousel-right-intro">
+          <h2 class="pxp-section-h2">Featured Properties</h2>
+          <p class="pxp-text-light">Browse our latest hot offers</p>
+          <a href="properties.html" class="pxp-primary-cta text-uppercase mt-2 mt-md-3 mt-lg-5 pxp-animate">Browse
+            All</a>
+        </div>
+        <div class="pxp-props-carousel-right-container mt-4 mt-md-5 mt-lg-0">
+          <div class="owl-carousel pxp-props-carousel-right-stage-1 owl-loaded owl-drag">
+            <div class="item">
+              <div>
+                <a href="single-property.html" class="pxp-prop-card-1 rounded-3">
+                  <div class="pxp-prop-card-1-fig pxp-cover" style="background-image: url(./Img/prop-1-1-gallery.jpg);">
+                  </div>
+                  <div class="pxp-prop-card-1-gradient pxp-animate"></div>
+                  <div class="pxp-prop-card-1-details">
+                    <div class="pxp-prop-card-1-details-title">Chic Apartment in Downtown</div>
+                    <div class="pxp-prop-card-1-details-price">$890,000</div>
+                    <div class="pxp-prop-card-1-details-features text-uppercase">2 BD <span>|</span> 2 BA <span>|</span>
+                      920 SF</div>
+                  </div>
+                  <div class="pxp-prop-card-1-details-cta text-uppercase">View Details</div>
+                </a>
+              </div>
+            </div>
+            <div class="item">
+              <div>
+                <a href="single-property.html" class="pxp-prop-card-1 rounded-3">
+                  <div class="pxp-prop-card-1-fig pxp-cover" style="background-image: url(./Img/prop-2-1-gallery.jpg);">
+                  </div>
+                  <div class="pxp-prop-card-1-gradient pxp-animate"></div>
+                  <div class="pxp-prop-card-1-details">
+                    <div class="pxp-prop-card-1-details-title">Colorful Little Apartment</div>
+                    <div class="pxp-prop-card-1-details-price">$2,675</div>
+                    <div class="pxp-prop-card-1-details-features text-uppercase">1 BD <span>|</span> 1 BA <span>|</span>
+                      500 SF</div>
+                  </div>
+                  <div class="pxp-prop-card-1-details-cta text-uppercase">View Details</div>
+                </a>
+              </div>
+            </div>
+
+            <div class="item">
+              <div>
+                <a href="single-property.html" class="pxp-prop-card-1 rounded-3">
+                  <div class="pxp-prop-card-1-fig pxp-cover" style="background-image: url(./Img/prop-3-1-gallery.jpg);">
+                  </div>
+                  <div class="pxp-prop-card-1-gradient pxp-animate"></div>
+                  <div class="pxp-prop-card-1-details">
+                    <div class="pxp-prop-card-1-details-title">Cozy Two Bedroom Apartment</div>
+                    <div class="pxp-prop-card-1-details-price">$960,000</div>
+                    <div class="pxp-prop-card-1-details-features text-uppercase">2 BD <span>|</span> 2 BA <span>|</span>
+                      870 SF</div>
+                  </div>
+                  <div class="pxp-prop-card-1-details-cta text-uppercase">View Details</div>
+                </a>
+              </div>
+            </div>
+            <div class="item">
+              <div>
+                <a href="single-property.html" class="pxp-prop-card-1 rounded-3">
+                  <div class="pxp-prop-card-1-fig pxp-cover" style="background-image: url(./Img/prop-7-1-gallery.jpg);">
+                  </div>
+                  <div class="pxp-prop-card-1-gradient pxp-animate"></div>
+                  <div class="pxp-prop-card-1-details">
+                    <div class="pxp-prop-card-1-details-title">Beautiful House in Marina</div>
+                    <div class="pxp-prop-card-1-details-price">$5,198,000</div>
+                    <div class="pxp-prop-card-1-details-features text-uppercase">5 BD <span>|</span> 4.5 BA
+                      <span>|</span> 3,945 SF
+                    </div>
+                  </div>
+                  <div class="pxp-prop-card-1-details-cta text-uppercase">View Details</div>
+                </a>
+              </div>
+            </div>
+            <div class="item">
+              <div>
+                <a href="single-property.html" class="pxp-prop-card-1 rounded-3">
+                  <div class="pxp-prop-card-1-fig pxp-cover" style="background-image: url(./Img/prop-8-1-gallery.jpg);">
+                  </div>
+                  <div class="pxp-prop-card-1-gradient pxp-animate"></div>
+                  <div class="pxp-prop-card-1-details">
+                    <div class="pxp-prop-card-1-details-title">Modern Residence</div>
+                    <div class="pxp-prop-card-1-details-price">$7,995</div>
+                    <div class="pxp-prop-card-1-details-features text-uppercase">4 BD <span>|</span> 1.5 BA
+                      <span>|</span> 2,240 SF
+                    </div>
+                  </div>
+                  <div class="pxp-prop-card-1-details-cta text-uppercase">View Details</div>
+                </a>
+              </div>
+            </div>
+            <div class="item">
+              <div>
+                <a href="single-property.html" class="pxp-prop-card-1 rounded-3">
+                  <div class="pxp-prop-card-1-fig pxp-cover" style="background-image: url(./Img/prop-9-1-gallery.jpg);">
+                  </div>
+                  <div class="pxp-prop-card-1-gradient pxp-animate"></div>
+                  <div class="pxp-prop-card-1-details">
+                    <div class="pxp-prop-card-1-details-title">Luxury Mansion</div>
+                    <div class="pxp-prop-card-1-details-price">$5,430,000</div>
+                    <div class="pxp-prop-card-1-details-features text-uppercase">4 BD <span>|</span> 5 BA <span>|</span>
+                      5,200 SF</div>
+                  </div>
+                  <div class="pxp-prop-card-1-details-cta text-uppercase">View Details</div>
+                </a>
+              </div>
+            </div>
+
+
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="pxp-testim-1 pt-100 pb-100 mt-100 pxp-cover" style="background-image: url(./Img/testim-1-fig.jpg);">
+        <div class="pxp-testim-1-intro">
+          <h2 class="pxp-section-h2">Customer Testimonials</h2>
+          <p class="pxp-text-light">What our customers say about us</p>
+          <a href="#" class="pxp-primary-cta text-uppercase mt-2 mt-md-3 mt-lg-5 pxp-animate">Read All Stories</a>
+        </div>
+        <div class="pxp-testim-1-container mt-4 mt-md-5 mt-lg-0">
+          <div class="owl-carousel pxp-testim-1-stage owl-loaded owl-drag">
+            <div class="item">
+              <div>
+                <div class="pxp-testim-1-item">
+                  <div class="pxp-testim-1-item-avatar pxp-cover" style="background-image: url(./Img/customer-1.jpg)">
+                  </div>
+                  <div class="pxp-testim-1-item-name">Derek Cotner</div>
+                  <div class="pxp-testim-1-item-location">Houston, TX</div>
+                  <div class="pxp-testim-1-item-message">While Resideo functions like a traditional broker, the
+                    company's promise is using technology to reduce the time and friction of buying and selling house or
+                    apartment.</div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div>
+                <div class="pxp-testim-1-item">
+                  <div class="pxp-testim-1-item-avatar pxp-cover" style="background-image: url(./Img/customer-3.jpg)">
+                  </div>
+                  <div class="pxp-testim-1-item-name">Rebecca Eason</div>
+                  <div class="pxp-testim-1-item-location">Washington, MD</div>
+                  <div class="pxp-testim-1-item-message">And it’s no wonder Resideo has shaken things up: As anyone
+                    who’s ever tried to rent or buy property in Washington knows, the experience is loaded with pain
+                    points.</div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div>
+                <div class="pxp-testim-1-item">
+                  <div class="pxp-testim-1-item-avatar pxp-cover" style="background-image: url(./Img/customer-2.jpg)">
+                  </div>
+                  <div class="pxp-testim-1-item-name">Kenneth Spiers</div>
+                  <div class="pxp-testim-1-item-location">Cleveland, OH</div>
+                  <div class="pxp-testim-1-item-message">While Resideo functions like a traditional broker, the
+                    company's promise is using technology to reduce the time and friction of buying and selling house or
+                    apartment.</div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div>
+                <div class="pxp-testim-1-item">
+                  <div class="pxp-testim-1-item-avatar pxp-cover" style="background-image: url(./Img/customer-4.jpg)">
+                  </div>
+                  <div class="pxp-testim-1-item-name">Susanne Weil</div>
+                  <div class="pxp-testim-1-item-location">Cambridge, MA</div>
+                  <div class="pxp-testim-1-item-message">And it’s no wonder Resideo has shaken things up: As anyone
+                    who’s ever tried to rent or buy property in Cambridge knows, the experience is loaded with pain
+                    points.</div>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="container mt-100">
+        <h2 class="pxp-section-h2">From Our Blog</h2>
+        <p class="pxp-text-light">Read our latest articles on real estate.</p>
+        <div class="row mt-4 mt-md-5">
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <a href="single-post.html" class="pxp-posts-1-item">
+              <div class="pxp-posts-1-item-fig-container">
+                <div class="pxp-posts-1-item-fig pxp-cover" style="background-image: url(./Img/posts-1.jpg);"></div>
+              </div>
+              <div class="pxp-posts-1-item-details">
+                <div class="pxp-posts-1-item-details-category">Interior Design</div>
+                <div class="pxp-posts-1-item-details-title">What to Expect When Working with an Interior Designer</div>
+                <div class="pxp-posts-1-item-details-date mt-2">April 9, 2021</div>
+                <div class="pxp-posts-1-item-cta text-uppercase">Read Article</div>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <a href="single-post.html" class="pxp-posts-1-item">
+              <div class="pxp-posts-1-item-fig-container">
+                <div class="pxp-posts-1-item-fig pxp-cover" style="background-image: url(./Img/posts-2.jpg);"></div>
+              </div>
+              <div class="pxp-posts-1-item-details">
+                <div class="pxp-posts-1-item-details-category">Architecture</div>
+                <div class="pxp-posts-1-item-details-title">Private Contemporary Home Balancing Openness</div>
+                <div class="pxp-posts-1-item-details-date mt-2">April 9, 2021</div>
+                <div class="pxp-posts-1-item-cta text-uppercase">Read Article</div>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <a href="single-post.html" class="pxp-posts-1-item">
+              <div class="pxp-posts-1-item-fig-container">
+                <div class="pxp-posts-1-item-fig pxp-cover" style="background-image: url(./Img/posts-3.jpg);"></div>
+              </div>
+              <div class="pxp-posts-1-item-details">
+                <div class="pxp-posts-1-item-details-category">Interior Design</div>
+                <div class="pxp-posts-1-item-details-title">Stylish Modern Ranch Exuding a Welcoming Feel</div>
+                <div class="pxp-posts-1-item-details-date mt-2">April 9, 2021</div>
+                <div class="pxp-posts-1-item-cta text-uppercase">Read Article</div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <a href="blog.html" class="pxp-primary-cta text-uppercase mt-2 mt-md-4 pxp-animate">Read More</a>
+      </div>
+      <div class="pxp-full pxp-cover pt-100 pb-100 mt-100" style="background-image: url(./Img/newsletter-1-fig.jpg);">
+        <div class="container">
+          <h2 class="pxp-section-h2">Stay Up to Date</h2>
+          <p class="pxp-text-light">Subscribe to our newsletter to receive our weekly feed</p>
+          <div class="row mt-4 mt-md-5">
+            <div class="col-sm-12 col-md-6">
+              <form action="index-2.html" class="pxp-newsletter-1-form">
+                <input type="text" class="form-control" placeholder="Enter your email...">
+                <a href="#" class="pxp-primary-cta text-uppercase pxp-animate mt-3 mt-md-4">Subscribe</a>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="mt-100 pt-100 pb-100 dark-mode">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <div class="pxp-footer-logo fw-bold fs-4">resideo.</div>
+          <div class="pxp-footer-address mt-2 ">
+            90 Fifth Avenue, 3rd Floor<br>
+            San Francisco, CA 1980<br>
+            (123) 456-7890
+          </div>
+          <div class="pxp-footer-social mt-3">
+            <a href="#" class="text-dark me-3"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-dark me-3"><i class="fab fa-facebook-square"></i></a>
+            <a href="#" class="text-dark"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-8">
+          <div class="row">
+            <div class="col-md-4 mb-4 mb-md-0">
+              <h5 class="pxp-footer-header fw-semibold">Company</h5>
+              <ul class="list-unstyled pxp-footer-links mt-2">
+                <li><a href="#" class="text-decoration-none ">About Us</a></li>
+                <li><a href="#" class="text-decoration-none ">Agents</a></li>
+                <li><a href="#" class="text-decoration-none ">Blog</a></li>
+                <li><a href="#" class="text-decoration-none ">Demos</a></li>
+                <li><a href="#" class="text-decoration-none ">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4 mb-4 mb-md-0">
+              <h5 class="pxp-footer-header fw-semibold">Actions</h5>
+              <ul class="list-unstyled pxp-footer-links mt-2">
+                <li><a href="#" class="text-decoration-none ">Buy Properties</a></li>
+                <li><a href="#" class="text-decoration-none ">Rent Properties</a></li>
+                <li><a href="#" class="text-decoration-none ">Sell Properties</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <h5 class="pxp-footer-header fw-semibold">Explore</h5>
+              <ul class="list-unstyled pxp-footer-links mt-2">
+                <li><a href="#" class="text-decoration-none ">Homes for Rent</a></li>
+                <li><a href="#" class="text-decoration-none ">Apartments for Rent</a></li>
+                <li><a href="#" class="text-decoration-none ">Homes for Sale</a></li>
+                <li><a href="#" class="text-decoration-none ">Apartments for Sale</a></li>
+                <li><a href="#" class="text-decoration-none ">CRM</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pxp-footer-bottom mt-4 d-flex flex-column ">
+        <div>
+          <a href="#" class="text-decoration-none ">Terms &amp; Conditions</a> &amp;
+          <a href="#" class="text-decoration-none ">Privacy Policy</a>
+        </div>
+        <div class="pxp-footer-copyright">© Resideo. All Rights Reserved. 2025</div>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Bootstrap 5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- jQuery Minified (Latest Version) -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Owl Carousel JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+  <script src="./script.js"></script>
+
+  <script>
+    $('.pxp-testim-1-stage').owlCarousel({
+      loop: true,  // Enables looping
+      nav: true,
+      dots: false,
+      margin: 30,
+      responsive: {
+        0: { items: 1 },
+        600: { items: 2 },
+        900: { items: 2 },
+        1200: { items: 3 }
+      },
+      navText: [
+        `<svg xmlns="http://www.w3.org/2000/svg" width="32.414" height="20.828" viewBox="0 0 32.414 20.828">
+            <g transform="translate(-1845.086 -1586.086)">
+                <line x1="30" transform="translate(1846.5 1596.5)" stroke="#333" stroke-width="2"/>
+                <line x1="9" y2="9" transform="translate(1846.5 1587.5)" stroke="#333" stroke-width="2"/>
+                <line x1="9" y1="9" transform="translate(1846.5 1596.5)" stroke="#333" stroke-width="2"/>
+            </g>
+        </svg>`,
+        `<svg xmlns="http://www.w3.org/2000/svg" width="32.414" height="20.828" viewBox="0 0 32.414 20.828">
+            <g transform="translate(-1847.5 -1589.086)">
+                <line x2="30" transform="translate(1848.5 1599.5)" stroke="#333" stroke-width="2"/>
+                <line x2="9" y2="9" transform="translate(1869.5 1590.5)" stroke="#333" stroke-width="2"/>
+                <line y1="9" x2="9" transform="translate(1869.5 1599.5)" stroke="#333" stroke-width="2"/>
+            </g>
+        </svg>`
+      ],
+      smartSpeed: 600
+    });
+
+
+    $(document).ready(function () {
+      if ($('.pxp-props-carousel-right-stage').length > 0) {
+        $('.pxp-props-carousel-right-stage').owlCarousel({
+          nav: true,
+          dots: false,
+          margin: 30,
+          responsive: {
+            0: { items: 1 },
+            600: { items: 2, stagePadding: 30 },
+            900: { items: 3, stagePadding: 60 },
+            1200: { items: 3, stagePadding: 120 },
+            1600: { items: 4, stagePadding: 120 }
+          },
+          navText: [
+            `<div class="pxp-props-carousel-left-arrow pxp-animate">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32.414" height="20.828" viewBox="0 0 32.414 20.828">
+                        <line x1="30" transform="translate(1.5 10.5)" stroke="#333" stroke-width="2"/>
+                        <line x1="9" y2="9" transform="translate(1.5 1.5)" stroke="#333" stroke-width="2"/>
+                        <line x1="9" y1="9" transform="translate(1.5 10.5)" stroke="#333" stroke-width="2"/>
+                    </svg>
+                </div>`,
+            `<div class="pxp-props-carousel-right-arrow pxp-animate">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32.414" height="20.828" viewBox="0 0 32.414 20.828">
+                        <line x2="30" transform="translate(1.5 10.5)" stroke="#333" stroke-width="2"/>
+                        <line x2="9" y2="9" transform="translate(22.5 1.5)" stroke="#333" stroke-width="2"/>
+                        <line y1="9" x2="9" transform="translate(22.5 10.5)" stroke="#333" stroke-width="2"/>
+                    </svg>
+                </div>`
+          ],
+          checkVisible: false,
+          smartSpeed: 600
+        });
+      }
+
+      if ($('.pxp-props-carousel-right-stage-1').length > 0) {
+        $('.pxp-props-carousel-right-stage-1').owlCarousel({
+          nav: true,
+          dots: false,
+          margin: 30,
+          responsive: {
+            0: { items: 1 },
+            600: { items: 2 },
+            900: { items: 2, stagePadding: 30 },
+            1200: { items: 3, stagePadding: 30 },
+            1600: { items: 3, stagePadding: 120 }
+          },
+          navText: [
+            `<div class="pxp-props-carousel-left-arrow pxp-animate">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32.414" height="20.828" viewBox="0 0 32.414 20.828">
+                        <line x1="30" transform="translate(1.5 10.5)" stroke="#333" stroke-width="2"/>
+                        <line x1="9" y2="9" transform="translate(1.5 1.5)" stroke="#333" stroke-width="2"/>
+                        <line x1="9" y1="9" transform="translate(1.5 10.5)" stroke="#333" stroke-width="2"/>
+                    </svg>
+                </div>`,
+            `<div class="pxp-props-carousel-right-arrow pxp-animate">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32.414" height="20.828" viewBox="0 0 32.414 20.828">
+                        <line x2="30" transform="translate(1.5 10.5)" stroke="#333" stroke-width="2"/>
+                        <line x2="9" y2="9" transform="translate(22.5 1.5)" stroke="#333" stroke-width="2"/>
+                        <line y1="9" x2="9" transform="translate(22.5 10.5)" stroke="#333" stroke-width="2"/>
+                    </svg>
+                </div>`
+          ],
+          checkVisible: false,
+          smartSpeed: 600
+        });
+      }
+    });
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>resideo</title>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome 6 CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- Owl Carousel CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+
+  <link rel="stylesheet" href="./Fonts/font.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body class="dark-mode">
+
+  <header id="myHeader" class="pxp-header dark-mode">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="logo col-5 col-md-2">
+          <a target="_self" href="./index.html" alt="" class="pxp-logo text-decoration-none">
+            resideo.
+          </a>
+        </div>
+        <div class="col-2 col-md-8 text-center">
+          <ul class="pxp-nav list-inline">
+            <li class="list-inline-item">
+              <a target="_self" href="javascript:viod(0);" target="_self">Home</a>
+              <ul class="pxp-nav-sub rounded-3">
+                <li><a target="_self" href="./index1.html">Version 1</a></li>
+                <li><a target="_self" href="./index2.html">Version 2</a></li>
+                <li><a target="_self" href="./index3.html">Version 3</a></li>
+                <li><a target="_self" href="./index4.html">Version 4</a></li>
+                <li><a target="_self" href="./index5.html">Version 5</a></li>
+                <li><a target="_self" href="./index.html">Version 6</a></li>
+              </ul>
+            </li>
+            <li class="list-inline-item">
+              <a target="_self" href="javascript:viod(0);">Properties</a>
+              <ul class="pxp-nav-sub rounded-3">
+                <li><a target="_self" href="./properties.html">All Properties</a></li>
+                <li><a target="_self" href="./single-property.html">Single Property</a></li>
+                <li><a target="_self" href="./submit-property.html">Submit New Property</a></li>
+              </ul>
+            </li>
+            <li class="list-inline-item">
+              <a target="_self" href="javascript:viod(0);">Blog</a>
+              <ul class="pxp-nav-sub rounded-3" style="display: none;">
+                <li><a target="_self" href="./blog.html">All Blog Posts</a></li>
+                <li><a target="_self" href="./single-post.html">Single Blog Post</a></li>
+              </ul>
+            </li>
+            <li class="list-inline-item">
+              <a target="_self" href="javascript:void(0);">Themes</a>
+              <ul class="pxp-nav-sub rounded-3">
+                <li><a target="_self" href="javascript:void(0);" id="lightTheme">Light</a></li>
+                <li><a target="_self" href="javascript:void(0);" id="darkTheme">Dark</a></li>
+              </ul>
+            </li>
+            <li class="list-inline-item pxp-is-last"><a target="_self" href="./contact.html">Contact Us</a></li>
+            <li class="list-inline-item pxp-has-btns">
+              <div class="pxp-user-btns">
+                <a target="_self" href="javascript:void(0);" class="pxp-user-btns-signup pxp-signup-trigger">Sign Up</a>
+                <a target="_self" href="javascript:void(0);" class="pxp-user-btns-login pxp-signin-trigger">Sign In</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="col-5 col-md-2 text-end">
+          <a target="_self" href="javascript:void(0);" class="pxp-header-nav-trigger"><i
+              class="fa-solid fa-bars"></i></a>
+          <a target="_self" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#pxp-signin-modal"
+            class="pxp-header-user pxp-signin-trigger"><i class="fa-regular fa-user"></i></a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="modal fade" id="pxp-signin-modal" tabindex="-1" aria-labelledby="pxpSigninModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h5 class="modal-title" id="pxpSigninModal">Welcome back!</h5>
+          <form class="mt-4">
+            <div class="mb-3">
+              <label for="pxp-signin-email" class="form-label">Email</label>
+              <input type="text" class="form-control" id="pxp-signin-email" placeholder="Enter your email address">
+            </div>
+            <div class="mb-3">
+              <label for="pxp-signin-pass" class="form-label">Password</label>
+              <input type="password" class="form-control" id="pxp-signin-pass" placeholder="Enter your password">
+            </div>
+            <div class="d-grid">
+              <button type="submit" class="pxp-agent-contact-modal-btn">Sign In</button>
+            </div>
+          </form>
+          <div class="form-group mt-4 text-center pxp-modal-small">
+            <a href="#" class="pxp-modal-link">Forgot password?</a>
+          </div>
+          <div class="text-center pxp-modal-small">
+            New to Resideo? <a href="javascript:void(0);" class="pxp-modal-link pxp-signup-trigger">Create an
+              account</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <main class="dark-mode">
+    <section class="pxp-content v1">
+      <div class="pxp-hero vh-100">
+        <div class="pxp-hero-bg pxp-cover pxp-cover-bottom" style="background-image: url(./Img/d11-home-hero.jpg);">
+        </div>
+        <div class="pxp-hero-opacity" style="background: rgba(0,0,0,0.2);"></div>
+        <div class="pxp-hero-caption">
+          <div class="container">
+            <h1 class="text-white">Find your future home</h1>
+            <p class="pxp-text-light text-white mb-0">Whether you’re buying, selling or renting, we can help you move
+              forward.</p>
+
+            <div class="hero-search pxp-has-tabs-margin">
+              <form class="pxp-hero-search mt-4 pxp-has-tabs" action="properties.html">
+                <div class="pxp-hero-search-tabs">
+                  <ul class="list-unstyled">
+                    <li class="pxp-active">
+                      <input type="radio" name="search_status" checked="checked"><a href="javascript:void(0);">For
+                        Rent</a>
+                    </li>
+                    <li>
+                      <input type="radio" name="search_status"><a href="javascript:void(0);">For Sale</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="row">
+                  <div class="col-sm-10 col-md-10">
+                    <div class="form-group">
+                      <input type="text" class="form-control" placeholder="Enter address..." autocomplete="off">
+                    </div>
+                  </div>
+                  <div class="col-sm-2 col-md-2">
+                    <button class="pxp-hero-search-btn"><span class="fa fa-search"></span></button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pxp-services-columns mt-100">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h2 class="pxp-section-h2 text-center">Your modern real estate platform</h2>
+            </div>
+            <div class="col-12">
+              <div class="row mt-4 mt-md-5">
+                <div class="col-md-4">
+                  <div class="pxp-services-columns-item text-center mb-3 mb-md-4">
+                    <div class="pxp-services-columns-item-fig">
+                      <img src="./Img/d11-home-service-1-icon-200x200.png" alt="Find your future home">
+                    </div>
+                    <h3 class="mt-3">Find your future home</h3>
+                    <p class="pxp-text-light">We help you find a new home by offering a smart real estate experience</p>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="pxp-services-columns-item text-center mb-3 mb-md-4">
+                    <div class="pxp-services-columns-item-fig">
+                      <img src="./Img/d11-home-service-2-icon-200x200.png" alt="Experienced agents">
+                    </div>
+                    <h3 class="mt-3">Experienced agents</h3>
+                    <p class="pxp-text-light">Find an experienced agent who knows your market best</p>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="pxp-services-columns-item text-center mb-3 mb-md-4">
+                    <div class="pxp-services-columns-item-fig">
+                      <img src="./Img/d11-home-service-3-icon-200x200.png" alt="List your own property">
+                    </div>
+                    <h3 class="mt-3">List your own property</h3>
+                    <p class="pxp-text-light">Sign up now and sell or rent your own properties</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mt-100">
+        <div class="container">
+          <h2 class="pxp-section-h2 text-center">Explore Neighborhoods</h2>
+          <p class="pxp-text-light text-center">The neighborhoods best suited to your lifestyle.</p>
+        </div>
+
+        <div class="pxp-areas-carousel mt-4 mt-md-5 container-fluid">
+          <div class="pxp-areas-carousel-stage owl-carousel owl-loaded owl-drag">
+
+            <div class="item">
+              <a href="properties.html" class="pxp-areas-carousel-item">
+                <div class="pxp-areas-carousel-item-fig-container">
+                  <div class="pxp-areas-carousel-item-fig pxp-cover" style="background-image: url(./Img/area-6.jpg);">
+                  </div>
+                </div>
+                <div class="pxp-areas-carousel-item-details mt-1">
+                  <div class="pxp-areas-carousel-item-details-area">Marina District</div>
+                  <div class="pxp-areas-carousel-item-details-city">San Francisco, CA</div>
+                </div>
+                <div class="pxp-areas-carousel-item-counter"><span>158 Properties</span></div>
+              </a>
+            </div>
+            <div class="item">
+              <a href="properties.html" class="pxp-areas-carousel-item">
+                <div class="pxp-areas-carousel-item-fig-container">
+                  <div class="pxp-areas-carousel-item-fig pxp-cover" style="background-image: url(./Img/area-3.jpg);">
+                  </div>
+                </div>
+                <div class="pxp-areas-carousel-item-details mt-1">
+                  <div class="pxp-areas-carousel-item-details-area">College Terrace</div>
+                  <div class="pxp-areas-carousel-item-details-city">Palo Alto, CA</div>
+                </div>
+                <div class="pxp-areas-carousel-item-counter"><span>129 Properties</span></div>
+              </a>
+            </div>
+            <div class="item">
+              <a href="properties.html" class="pxp-areas-carousel-item">
+                <div class="pxp-areas-carousel-item-fig-container">
+                  <div class="pxp-areas-carousel-item-fig pxp-cover" style="background-image: url(./Img/area-4.jpg);">
+                  </div>
+                </div>
+                <div class="pxp-areas-carousel-item-details mt-1">
+                  <div class="pxp-areas-carousel-item-details-area">Inner Sunset</div>
+                  <div class="pxp-areas-carousel-item-details-city">San Francisco, CA</div>
+                </div>
+                <div class="pxp-areas-carousel-item-counter"><span>129 Properties</span></div>
+              </a>
+            </div>
+            <div class="item">
+              <a href="properties.html" class="pxp-areas-carousel-item">
+                <div class="pxp-areas-carousel-item-fig-container">
+                  <div class="pxp-areas-carousel-item-fig pxp-cover" style="background-image: url(./Img/area-5.jpg);">
+                  </div>
+                </div>
+                <div class="pxp-areas-carousel-item-details mt-1">
+                  <div class="pxp-areas-carousel-item-details-area">Upper West Side</div>
+                  <div class="pxp-areas-carousel-item-details-city">New York City, NY</div>
+                </div>
+                <div class="pxp-areas-carousel-item-counter"><span>324 Properties</span></div>
+              </a>
+            </div>
+            <div class="item">
+              <a href="properties.html" class="pxp-areas-carousel-item">
+                <div class="pxp-areas-carousel-item-fig-container">
+                  <div class="pxp-areas-carousel-item-fig pxp-cover" style="background-image: url(./Img/area-1.jpg);">
+                  </div>
+                </div>
+                <div class="pxp-areas-carousel-item-details mt-1">
+                  <div class="pxp-areas-carousel-item-details-area">Bluemont</div>
+                  <div class="pxp-areas-carousel-item-details-city">Arlington, VA</div>
+                </div>
+                <div class="pxp-areas-carousel-item-counter"><span>324 Properties</span></div>
+              </a>
+            </div>
+            <div class="item">
+              <a href="properties.html" class="pxp-areas-carousel-item">
+                <div class="pxp-areas-carousel-item-fig-container">
+                  <div class="pxp-areas-carousel-item-fig pxp-cover" style="background-image: url(./Img/area-2.jpg);">
+                  </div>
+                </div>
+                <div class="pxp-areas-carousel-item-details mt-1">
+                  <div class="pxp-areas-carousel-item-details-area">Overlake</div>
+                  <div class="pxp-areas-carousel-item-details-city">Redmond, WA</div>
+                </div>
+                <div class="pxp-areas-carousel-item-counter"><span>158 Properties</span></div>
+              </a>
+            </div>
+
+
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="text-center mt-4 mt-md-5">
+            <a href="properties.html" class="pxp-primary-cta text-uppercase pxp-animate">Explore Neighborhoods</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pxp-video-section pxp-cover pt-100 pb-100 mt-100"
+        style="background-image: url(./Img/d9-home-video-1920x1280.jpg);">
+        <div class="container">
+          <h2 class="pxp-section-h2 text-center">A tech company reinventing the space</h2>
+          <p class="pxp-text-light text-center">The smartest tools built by the brightest minds across engineering,
+            design, and strategy. </p>
+          <div class="pt-100 pb-100 text-center">
+            <a href="https://youtu.be/cBW0uh3LE5w?si=82c_RsJms9zG5N1H" target="_blank" class="pxp-video-section-trigger"
+              data-toggle="modal" data-target="#pxp-video-section-modal">
+              <span class="fa fa-play"></span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+      <div class="pxp-services-tabs mt-100">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <h2 class="pxp-section-h2 d-block d-lg-none">See how Resideo can help</h2>
+              <p class="pxp-text-light mt-3 mt-lg-4 d-block d-lg-none">With the solutions-driven mindset of a startup
+                and the sophistication of a luxury brand, Resideo is the future of real estate.</p>
+
+              <div class="pxp-services-tabs-items mt-4 mt-md-5 mt-lg-0">
+                <div id="pxp-services-tabs-carousel" class="carousel slide carousel-fade pxp-services-tabs-carousel"
+                  data-ride="carousel" data-interval="false">
+                  <div class="carousel-inner">
+                    <div class="carousel-item pxp-cover active"
+                      style="background-image: url(./Img/d9-buy-home-bg-800x600.jpg);"></div>
+                    <div class="carousel-item pxp-cover"
+                      style="background-image: url(./Img/d9-rent-home-bg-800x600.jpg);"></div>
+                    <div class="carousel-item pxp-cover"
+                      style="background-image: url(./Img/d9-see-areas-bg-800x600.jpg);"></div>
+                    <div class="carousel-item pxp-cover"
+                      style="background-image: url(./Img/d9-find-agents-bg-800x600.jpg);"></div>
+                  </div>
+                </div>
+                <div class="pxp-services-tabs-items-content">
+                  <div id="pxp-services-tabs-content-carousel" class="carousel slide carousel-fade" data-ride="carousel"
+                    data-interval="false">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <a href="properties.html" class="pxp-services-tabs-content-item">
+                          <div class="pxp-services-tabs-content-item-fig">
+                            <img src="./Img/d9-services-1.png" alt="Buy a home">
+                          </div>
+                          <div class="pxp-services-tabs-content-item-text">With over 1 million+ homes for sale available
+                            on the website, Resideo can match you with a house you will want to call home.</div>
+                          <div class="pxp-services-tabs-content-item-cta-container">
+                            <div class="pxp-services-tabs-content-item-cta text-uppercase">
+                              <span>Find a home</span>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="32.414" height="20.828"
+                                viewBox="0 0 32.414 20.828">
+                                <g id="Symbol_1_1" data-name="Symbol 1 – 1" transform="translate(-1847.5 -1589.086)">
+                                  <line id="Line_5" data-name="Line 2" x2="30" transform="translate(1848.5 1599.5)"
+                                    fill="none" stroke="#333" stroke-linecap="round" stroke-width="2"></line>
+                                  <line id="Line_6" data-name="Line 3" x2="9" y2="9"
+                                    transform="translate(1869.5 1590.5)" fill="none" stroke="#333"
+                                    stroke-linecap="round" stroke-width="2"></line>
+                                  <line id="Line_7" data-name="Line 4" y1="9" x2="9"
+                                    transform="translate(1869.5 1599.5)" fill="none" stroke="#333"
+                                    stroke-linecap="round" stroke-width="2"></line>
+                                </g>
+                              </svg>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="carousel-item">
+                        <a href="properties.html" class="pxp-services-tabs-content-item">
+                          <div class="pxp-services-tabs-content-item-fig">
+                            <img src="./Img/d9-plan-business.png" alt="Rent a home">
+                          </div>
+                          <div class="pxp-services-tabs-content-item-text">With filters and custom keyword search,
+                            Resideo can help you easily find a home or apartment for rent that you'll love.</div>
+                          <div class="pxp-services-tabs-content-item-cta-container">
+                            <div class="pxp-services-tabs-content-item-cta text-uppercase">
+                              <span>Find a rental</span>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="32.414" height="20.828"
+                                viewBox="0 0 32.414 20.828">
+                                <g id="Symbol_1_1" data-name="Symbol 1 – 1" transform="translate(-1847.5 -1589.086)">
+                                  <line id="Line_5" data-name="Line 2" x2="30" transform="translate(1848.5 1599.5)"
+                                    fill="none" stroke="#333" stroke-linecap="round" stroke-width="2"></line>
+                                  <line id="Line_6" data-name="Line 3" x2="9" y2="9"
+                                    transform="translate(1869.5 1590.5)" fill="none" stroke="#333"
+                                    stroke-linecap="round" stroke-width="2"></line>
+                                  <line id="Line_7" data-name="Line 4" y1="9" x2="9"
+                                    transform="translate(1869.5 1599.5)" fill="none" stroke="#333"
+                                    stroke-linecap="round" stroke-width="2"></line>
+                                </g>
+                              </svg>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="carousel-item">
+                        <a href="properties.html" class="pxp-services-tabs-content-item">
+                          <div class="pxp-services-tabs-content-item-fig">
+                            <img src="./Img/d9-plan-professional.png" alt="See neighborhoods">
+                          </div>
+                          <div class="pxp-services-tabs-content-item-text">With more neighborhood insights than any
+                            other real estate website, we've captured the color and diversity of communities.</div>
+                          <div class="pxp-services-tabs-content-item-cta-container">
+                            <div class="pxp-services-tabs-content-item-cta text-uppercase">
+                              <span>Explore now</span>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="32.414" height="20.828"
+                                viewBox="0 0 32.414 20.828">
+                                <g id="Symbol_1_1" data-name="Symbol 1 – 1" transform="translate(-1847.5 -1589.086)">
+                                  <line id="Line_5" data-name="Line 2" x2="30" transform="translate(1848.5 1599.5)"
+                                    fill="none" stroke="#333" stroke-linecap="round" stroke-width="2"></line>
+                                  <line id="Line_6" data-name="Line 3" x2="9" y2="9"
+                                    transform="translate(1869.5 1590.5)" fill="none" stroke="#333"
+                                    stroke-linecap="round" stroke-width="2"></line>
+                                  <line id="Line_7" data-name="Line 4" y1="9" x2="9"
+                                    transform="translate(1869.5 1599.5)" fill="none" stroke="#333"
+                                    stroke-linecap="round" stroke-width="2"></line>
+                                </g>
+                              </svg>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="carousel-item">
+                        <a href="agents.html" class="pxp-services-tabs-content-item">
+                          <div class="pxp-services-tabs-content-item-fig">
+                            <img src="./Img/d9-services-2.png" alt="Experienced agents">
+                          </div>
+                          <div class="pxp-services-tabs-content-item-text">With over 1 million+ homes for sale available
+                            on the website, Resideo can match you with a house you will want to call home.</div>
+                          <div class="pxp-services-tabs-content-item-cta-container">
+                            <div class="pxp-services-tabs-content-item-cta text-uppercase">
+                              <span>Find an agent</span>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="32.414" height="20.828"
+                                viewBox="0 0 32.414 20.828">
+                                <g id="Symbol_1_1" data-name="Symbol 1 – 1" transform="translate(-1847.5 -1589.086)">
+                                  <line id="Line_5" data-name="Line 2" x2="30" transform="translate(1848.5 1599.5)"
+                                    fill="none" stroke="#333" stroke-linecap="round" stroke-width="2"></line>
+                                  <line id="Line_6" data-name="Line 3" x2="9" y2="9"
+                                    transform="translate(1869.5 1590.5)" fill="none" stroke="#333"
+                                    stroke-linecap="round" stroke-width="2"></line>
+                                  <line id="Line_7" data-name="Line 4" y1="9" x2="9"
+                                    transform="translate(1869.5 1599.5)" fill="none" stroke="#333"
+                                    stroke-linecap="round" stroke-width="2"></line>
+                                </g>
+                              </svg>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-1"></div>
+            <div class="col-lg-5">
+              <h2 class="pxp-section-h2 d-none d-lg-block">See how Resideo can help</h2>
+              <p class="pxp-text-light mt-3 mt-lg-4 d-none d-lg-block">With the solutions-driven mindset of a startup
+                and the sophistication of a luxury brand, Resideo is the future of real estate.</p>
+              <ul class="carousel-indicators" data-id="">
+                <li data-target="#pxp-services-tabs-carousel" data-slide-to="0" class="active">Buy a home</li>
+                <li data-target="#pxp-services-tabs-carousel" data-slide-to="1">Rent a home</li>
+                <li data-target="#pxp-services-tabs-carousel" data-slide-to="2">See neighborhoods</li>
+                <li data-target="#pxp-services-tabs-carousel" data-slide-to="3">Experienced agents</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="mt-100 pt-100 pb-100 dark-mode">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <div class="pxp-footer-logo fw-bold fs-4">resideo.</div>
+          <div class="pxp-footer-address mt-2 ">
+            90 Fifth Avenue, 3rd Floor<br>
+            San Francisco, CA 1980<br>
+            (123) 456-7890
+          </div>
+          <div class="pxp-footer-social mt-3">
+            <a href="#" class="text-dark me-3"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-dark me-3"><i class="fab fa-facebook-square"></i></a>
+            <a href="#" class="text-dark"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-8">
+          <div class="row">
+            <div class="col-md-4 mb-4 mb-md-0">
+              <h5 class="pxp-footer-header fw-semibold">Company</h5>
+              <ul class="list-unstyled pxp-footer-links mt-2">
+                <li><a href="#" class="text-decoration-none ">About Us</a></li>
+                <li><a href="#" class="text-decoration-none ">Agents</a></li>
+                <li><a href="#" class="text-decoration-none ">Blog</a></li>
+                <li><a href="#" class="text-decoration-none ">Demos</a></li>
+                <li><a href="#" class="text-decoration-none ">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4 mb-4 mb-md-0">
+              <h5 class="pxp-footer-header fw-semibold">Actions</h5>
+              <ul class="list-unstyled pxp-footer-links mt-2">
+                <li><a href="#" class="text-decoration-none ">Buy Properties</a></li>
+                <li><a href="#" class="text-decoration-none ">Rent Properties</a></li>
+                <li><a href="#" class="text-decoration-none ">Sell Properties</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <h5 class="pxp-footer-header fw-semibold">Explore</h5>
+              <ul class="list-unstyled pxp-footer-links mt-2">
+                <li><a href="#" class="text-decoration-none ">Homes for Rent</a></li>
+                <li><a href="#" class="text-decoration-none ">Apartments for Rent</a></li>
+                <li><a href="#" class="text-decoration-none ">Homes for Sale</a></li>
+                <li><a href="#" class="text-decoration-none ">Apartments for Sale</a></li>
+                <li><a href="#" class="text-decoration-none ">CRM</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pxp-footer-bottom mt-4 d-flex flex-column ">
+        <div>
+          <a href="#" class="text-decoration-none ">Terms &amp; Conditions</a> &amp;
+          <a href="#" class="text-decoration-none ">Privacy Policy</a>
+        </div>
+        <div class="pxp-footer-copyright">© Resideo. All Rights Reserved. 2025</div>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Bootstrap 5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- jQuery Minified (Latest Version) -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Owl Carousel JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+  <script src="./script.js"></script>
+  <script>
+    $('.pxp-hero-search-tabs ul li a').click(function () {
+      $(this).prev().prop("checked", true);
+      $(this).parent().siblings().removeClass('pxp-active');
+      $(this).parent().addClass('pxp-active');
+    });
+  </script>
+  <script>
+    $(document).ready(function () {
+      // Services tabs section - Handle tab clicks for Bootstrap Carousel
+      $('.pxp-services-tabs .carousel-indicators li').on('click', function () {
+        var slideIndex = $(this).data('slide-to'); // Get the index from data-slide-to
+
+        // Remove 'active' class from all indicators and add it to the clicked one
+        $('.pxp-services-tabs .carousel-indicators li').removeClass('active');
+        $(this).addClass('active');
+
+        // Move the carousel to the selected slide
+        $('#pxp-services-tabs-content-carousel').carousel(slideIndex);
+      });
+    });
+
+
+
+    setTimeout(function () {
+      if ($('.pxp-areas-carousel-stage').length > 0) {
+        $('.pxp-areas-carousel-stage').owlCarousel({
+          nav: true,
+          dots: false,
+          margin: 30,
+          responsive: {
+            0: { items: 1 },
+            600: { items: 2 },
+            900: { items: 3 },
+            1200: { items: 3 },
+            1600: { items: 4 }
+          },
+          navText: [
+            `<div class="pxp-areas-carousel-left-arrow pxp-animate">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="32.414" height="20.828" viewBox="0 0 32.414 20.828" class="pxp-arrow-1">
+                         <g transform="translate(-1845.086 -1586.086)">
+                             <line x1="30" transform="translate(1846.5 1596.5)" stroke="#333" stroke-linecap="round" stroke-width="2"/>
+                             <line x1="9" y2="9" transform="translate(1846.5 1587.5)" stroke="#333" stroke-linecap="round" stroke-width="2"/>
+                             <line x1="9" y1="9" transform="translate(1846.5 1596.5)" stroke="#333" stroke-linecap="round" stroke-width="2"/>
+                         </g>
+                     </svg>
+                 </div>`,
+            `<div class="pxp-areas-carousel-right-arrow pxp-animate">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="32.414" height="20.828" viewBox="0 0 32.414 20.828">
+                         <g transform="translate(-1847.5 -1589.086)">
+                             <line x2="30" transform="translate(1848.5 1599.5)" stroke="#333" stroke-linecap="round" stroke-width="2"/>
+                             <line x2="9" y2="9" transform="translate(1869.5 1590.5)" stroke="#333" stroke-linecap="round" stroke-width="2"/>
+                             <line y1="9" x2="9" transform="translate(1869.5 1599.5)" stroke="#333" stroke-linecap="round" stroke-width="2"/>
+                         </g>
+                     </svg>
+                 </div>`
+          ],
+          smartSpeed: 600
+        });
+      }
+    }, 500); // Delay to ensure DOM is fully loaded
+
+  </script>
+</body>
+
+</html>
